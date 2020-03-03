@@ -1,0 +1,308 @@
+/* GLOBAL */
+
+:root {
+  --color-1: #FA382F;
+  --color-2: #072BCE;
+  --color-3: #FDDFE7;
+  --color-text: black;
+  --color-bg1: white;
+  --color-bg2: #F4F4F4;
+}
+
+
+body {
+  background-color: var(--color-bg1);
+  margin: 0;
+}
+
+
+/* HEADER */
+
+header {
+  /* background-color: var(--color-2);
+  background-image: url(); */
+  background-image: linear-gradient(rgb(7, 255, 181), rgb(0, 217, 255));
+  margin: 0;
+  padding: 100px 40px 0 40px;
+  color: var(--color-bg1)
+}
+
+.header-text-box {
+  align-self: flex-start;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font: Bold 40px/49px Montserrat;
+  margin: 0;
+}
+
+.sub-titel {
+  font: Bold 24px/29px Montserrat;
+  margin: 0;
+}
+
+header p {
+  font: 13px/15px Roboto;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.content-container-header {
+  max-width: 800px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.icon {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.icon-img {
+  width: 20px;
+}
+
+.profile-pic {
+  width: 162px;
+  height: 162px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-bottom: -15px;
+}
+
+
+/* MAIN */
+
+.portfolio-section {
+  margin: 0;
+  padding: 58px 36px 40px 36px;
+  font: 17px/29px Montserrat;
+}
+
+.dark {
+  background-color: var(--color-bg2);
+}
+
+h2 {
+  padding: 3px 8px;
+  background: var(--color-1);
+  width: fit-content;
+  color: var(--color-bg1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font: Bold 22px/27px Montserrat;
+  margin: 0 auto 35px auto;
+}
+
+h3 {
+  font: Bold 21px/25px Montserrat;
+  color: var(--color-1);
+  margin: 0 auto 35px auto;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.only-desktop {
+  display: none;
+}
+
+
+/* 1 INTRO */
+
+.initial {
+  width: 60px;
+  height: 29px;
+  /* same as line height */
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+  /* align at baseline top */
+}
+
+.line {
+  width: 45px;
+  height: 3px;
+  background: var(--color-1);
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-1);
+  margin-left: -3px;
+}
+
+/* 2 TECH */
+
+.tech p {
+  text-align: center;
+}
+
+/* 3 PROJECTS */
+
+.projects img {
+  width: 100%;
+}
+
+/* 4 THOUGHTS */
+
+.thoughts img {
+  width: 100%;
+}
+
+
+/* 5 SKILLS */
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-header {
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-1);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+ul {
+  font: 17px/29px Roboto;
+  list-style: none;
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+
+
+/* 6 MORE */
+
+.more-container-icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.more-icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-1);
+  width: 60px;
+}
+
+.icon-more {
+  border: 3px solid var(--color-1);
+  width: 60px;
+  height: 60px;
+}
+
+.icon-img-more {
+  width: 24px;
+}
+
+.more-text {
+  font: Bold 12px/40px Roboto;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.more-icon-link:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: 266px;
+  background-color: var(--color-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3 {
+  color: var(--color-bg1);
+  margin-bottom: 1em;
+}
+
+footer ul {
+  font: 17px/29px Roboto;
+  color: var(--color-bg1);
+  margin-bottom: 0;
+}
+
+
+
+
+
+/* SCROLL BAR */
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: black
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-bg1);
+}
+
+
+
+
+/* DESKTOP */
+
+@media (min-width: 700px) {
+
+  header {
+    padding: 100px 15% 0 15%;
+  }
+
+  .only-desktop {
+    display: inline;
+  }
+
+
+
+}
+
+
+/*
+section h1 {
+  padding: 5px;
+  background: var(--color-1);
+  width: fit-content;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font: Bold 48px/58px Montserrat;
+  margin: 0 0 10px 0;
+}
+
+*/
