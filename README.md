@@ -1,6 +1,6 @@
 # Technigo Portfolio
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Creating a technical portfolio after a given design
 
 ## The problem
 
