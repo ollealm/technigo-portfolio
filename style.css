@@ -31,6 +31,24 @@ article {
 
 /* FONTS */
 
+h1 {
+  font: Bold 40px/49px Montserrat;
+  margin: 0;
+}
+
+.sub-titel {
+  font: 24px/29px Montserrat;
+  margin: 0;
+}
+
+h6 {
+  font: 13px/15px Roboto;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+
 h2 {
   padding: 3px 8px;
   background: var(--color-1);
@@ -77,9 +95,10 @@ a {
 }
 
 a:focus {
-  outline: 10px dashed var(--color-1);
+  outline: 3px dashed var(--color-1);
   outline-offset: 15px;
 }
+
 
 
 
@@ -100,22 +119,6 @@ header {
   justify-content: space-between;
 }
 
-h1 {
-  font: Bold 40px/49px Montserrat;
-  margin: 0;
-}
-
-.sub-titel {
-  font: 24px/29px Montserrat;
-  margin: 0;
-}
-
-header p {
-  font: 13px/15px Roboto;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin: 0;
-}
 
 .content-container-header {
   height: 400px;
@@ -461,6 +464,18 @@ body::-webkit-scrollbar-thumb {
 
   /* FONTS */
 
+  h1 {
+    font: Bold 78px/92px Montserrat
+  }
+
+  .sub-titel {
+    font: 50px/61px Montserrat
+  }
+
+  h6 {
+    font: 28px/33px Roboto;
+  }
+
   h2 {
     font: Bold 48px/58px Montserrat;
     padding: 3px 15px;
@@ -499,18 +514,6 @@ body::-webkit-scrollbar-thumb {
 
 
   /* HEADER */
-
-  h1 {
-    font: Bold 78px/92px Montserrat
-  }
-
-  .sub-titel {
-    font: 50px/61px Montserrat
-  }
-
-  header p {
-    font: 28px/33px Roboto;
-  }
 
   .content-container-header {
     height: 555px;
