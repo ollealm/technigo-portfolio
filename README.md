@@ -4,9 +4,22 @@ Start by briefly describing the assignment in a sentence or two. Keep it short a
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
 Acsessebility and crossbrowser testing
+
+Used tools: 
+browserstack.com for crossbrowser testing 
+validator.w3.org for code validation
+webaim.org/resources/contrastchecker/ for text contrast
+wave.webaim.org/ for accessebility testing
+caniuse.com for browser support
+
+Code:
+alt attribute
+:focus pseudo-class
+
+Read more:
+https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility
+
 
 ## View it live
 
