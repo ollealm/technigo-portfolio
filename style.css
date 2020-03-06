@@ -7,18 +7,78 @@
   --color-text: black;
   --color-bg1: white;
   --color-bg2: #F4F4F4;
-}
 
+  /* --color-1: red;
+  --color-2: blue;
+  --color-3: red;
+  --color-text: black;
+  --color-bg1: white;
+  --color-bg2: lightgrey; */
+}
 
 body {
   background-color: var(--color-bg1);
   margin: 0;
+  color: var(--color-text);
 }
 
 article {
   max-width: 550px;
   margin: auto;
+}
 
+
+
+/* FONTS */
+
+h2 {
+  padding: 3px 8px;
+  background: var(--color-1);
+  width: fit-content;
+  color: var(--color-bg1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font: Bold 22px/27px Montserrat;
+  margin: 0 auto 35px auto;
+  text-align: center;
+}
+
+h3 {
+  font: Bold 21px/25px Montserrat;
+  color: var(--color-1);
+  margin: 0 auto 35px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4 {
+  font: Bold 21px/32px Roboto;
+  margin: 0;
+}
+
+h5 {
+  font: Bold 17px/32px Roboto;
+}
+
+.red {
+  color: var(--color-1);
+  font-weight: normal;
+}
+
+.upper-bold {
+  color: var(--color-1);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+a:focus {
+  outline: 10px dashed var(--color-1);
+  outline-offset: 15px;
 }
 
 
@@ -26,8 +86,7 @@ article {
 /* HEADER */
 
 header {
-  /* background-color: var(--color-2);
-  background-image: url(); */
+  /* background-image: url(); */
   background-image: linear-gradient(rgb(7, 255, 181), rgb(0, 217, 255));
   padding: 100px 40px 0 40px;
   color: var(--color-bg1)
@@ -90,8 +149,7 @@ header p {
 
 
 
-
-/* MAIN */
+/* SECTIONS */
 
 .portfolio-section {
   padding: 58px 36px 40px 36px;
@@ -102,52 +160,6 @@ header p {
   background-color: var(--color-bg2);
 }
 
-h2 {
-  padding: 3px 8px;
-  background: var(--color-1);
-  width: fit-content;
-  color: var(--color-bg1);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font: Bold 22px/27px Montserrat;
-  margin: 0 auto 35px auto;
-  text-align: center;
-
-}
-
-h3 {
-  font: Bold 21px/25px Montserrat;
-  color: var(--color-1);
-  margin: 0 auto 35px auto;
-  text-align: center;
-  text-transform: uppercase;
-
-}
-
-h4 {
-  font: Bold 21px/32px Roboto;
-  margin: 0;
-}
-
-h5 {
-  font: Bold 17px/32px Roboto;
-}
-
-.red {
-  color: var(--color-1);
-  font-weight: normal;
-}
-
-.upper-bold {
-  color: var(--color-1);
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-text);
-}
 
 
 /* 1 INTRO */
@@ -176,14 +188,17 @@ a {
   margin-left: -3px;
 }
 
+
+
 /* 2 TECH */
 
 .tech p {
   text-align: center;
 }
 
-/* 3 PROJECTS */
 
+
+/* 3 PROJECTS */
 
 .project-card {
   display: block;
@@ -247,12 +262,14 @@ a {
 
 .project-card:hover h4 {
   text-decoration: underline;
-  /* color: white; */
+  color: black;
 }
 
 .other-projects {
   margin-top: 80px;
 }
+
+
 
 /* 4 THOUGHTS */
 
@@ -281,6 +298,8 @@ a {
 .project-card:hover strong {
   text-decoration: underline;
 }
+
+
 
 /* 5 SKILLS */
 
@@ -385,7 +404,6 @@ footer a:hover .mail {
 
 
 
-
 /* SCROLL BAR */
 
 body::-webkit-scrollbar {
@@ -401,6 +419,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
+/* ONLY DESKTOP */
+
 .only-desktop-block,
 .only-desktop {
   display: none;
@@ -410,36 +431,14 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-
-
+/***********************************/
 /************ DESKTOP **************/
+/***********************************/
 
-
-
-@media (min-width: 600px) {
-
-  /* GENERAL CHANGES */
-
-  /* header,
-  .portfolio-section {
-    
-    padding-left: 15%;
-    padding-right: 15%;
-    margin: auto;
-  }
-   */
-
-}
 
 @media (min-width: 768px) {
 
-  header,
-  .portfolio-section {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin: auto;
-  }
+  /* GLOBAL */
 
   .only-desktop {
     display: inline;
@@ -453,11 +452,50 @@ body::-webkit-scrollbar-thumb {
     display: none;
   }
 
-
   article {
     max-width: 1080px;
     margin: auto;
   }
+
+
+
+  /* FONTS */
+
+  h2 {
+    font: Bold 48px/58px Montserrat;
+    padding: 3px 15px;
+    margin-bottom: 70px;
+  }
+
+  h3 {
+    font: Bold 38px/47px Montserrat;
+  }
+
+  h4 {
+    font: Bold 30px/41px Roboto;
+  }
+
+  .red-desktop {
+    color: var(--color-1);
+  }
+
+
+
+  /* SECTIONS */
+
+  header,
+  .portfolio-section {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
+  }
+
+  .portfolio-section {
+    padding-top: 124px;
+    padding-bottom: 124px;
+    font: 30px/50px Montserrat;
+  }
+
 
 
   /* HEADER */
@@ -497,33 +535,6 @@ body::-webkit-scrollbar-thumb {
     border: 4px Solid White;
   }
 
-  /* MAIN */
-
-  .portfolio-section {
-    padding-top: 124px;
-    padding-bottom: 124px;
-    font: 30px/50px Montserrat;
-  }
-
-  h2 {
-    font: Bold 48px/58px Montserrat;
-    padding: 3px 15px;
-    margin-bottom: 70px;
-    ;
-  }
-
-  h3 {
-    font: Bold 38px/47px Montserrat;
-  }
-
-  h4 {
-    font: Bold 30px/41px Roboto;
-  }
-
-
-  .red-desktop {
-    color: var(--color-1);
-  }
 
 
   /* 1 INTRO */
@@ -531,26 +542,18 @@ body::-webkit-scrollbar-thumb {
   .initial {
     width: 110px;
     height: 50px;
-    /* same as line height */
-    display: inline-flex;
-    align-items: center;
-    vertical-align: top;
-    /* align at baseline top */
   }
 
   .line {
     width: 80px;
     height: 4px;
-    background: var(--color-1);
   }
 
   .circle {
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    background: var(--color-1);
-    margin-left: -3px;
   }
+
 
 
   /* 3 PROJECTS */
@@ -576,15 +579,14 @@ body::-webkit-scrollbar-thumb {
     font: 16px/19px Roboto;
   }
 
-
   .other {
     max-width: 800px;
   }
 
-
   .other-projects p {
     margin-left: 10px;
   }
+
 
 
   /* 4 THOUGHTS */
@@ -616,6 +618,7 @@ body::-webkit-scrollbar-thumb {
   }
 
 
+
   /* 6 MORE */
 
   .more-icon-link {
@@ -637,6 +640,8 @@ body::-webkit-scrollbar-thumb {
     font: Bold 25px/41px Roboto;
   }
 
+
+
   /* FOOTER */
 
   footer {
@@ -653,20 +658,5 @@ body::-webkit-scrollbar-thumb {
   }
 
 
+
 }
-
-
-
-/*
-section h1 {
-  padding: 5px;
-  background: var(--color-1);
-  width: fit-content;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font: Bold 48px/58px Montserrat;
-  margin: 0 0 10px 0;
-}
-
-*/
