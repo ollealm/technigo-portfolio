@@ -15,6 +15,13 @@ body {
   margin: 0;
 }
 
+article {
+  max-width: 550px;
+  margin: auto;
+
+}
+
+
 
 /* HEADER */
 
@@ -22,7 +29,6 @@ header {
   /* background-color: var(--color-2);
   background-image: url(); */
   background-image: linear-gradient(rgb(7, 255, 181), rgb(0, 217, 255));
-  margin: 0;
   padding: 100px 40px 0 40px;
   color: var(--color-bg1)
 }
@@ -41,7 +47,7 @@ h1 {
 }
 
 .sub-titel {
-  font: Bold 24px/29px Montserrat;
+  font: 24px/29px Montserrat;
   margin: 0;
 }
 
@@ -53,7 +59,6 @@ header p {
 }
 
 .content-container-header {
-  max-width: 800px;
   height: 400px;
   margin: auto;
   display: flex;
@@ -84,10 +89,11 @@ header p {
 }
 
 
+
+
 /* MAIN */
 
 .portfolio-section {
-  margin: 0;
   padding: 58px 36px 40px 36px;
   font: 17px/29px Montserrat;
 }
@@ -105,6 +111,8 @@ h2 {
   letter-spacing: 1px;
   font: Bold 22px/27px Montserrat;
   margin: 0 auto 35px auto;
+  text-align: center;
+
 }
 
 h3 {
@@ -116,8 +124,29 @@ h3 {
 
 }
 
-.only-desktop {
-  display: none;
+h4 {
+  font: Bold 21px/32px Roboto;
+  margin: 0;
+}
+
+h5 {
+  font: Bold 17px/32px Roboto;
+}
+
+.red {
+  color: var(--color-1);
+  font-weight: normal;
+}
+
+.upper-bold {
+  color: var(--color-1);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 
@@ -155,16 +184,103 @@ h3 {
 
 /* 3 PROJECTS */
 
-.projects img {
+
+.project-card {
+  display: block;
+  max-width: 400px;
+  margin: 30px auto 58px auto;
+  font: 17px/29px Roboto;
+}
+
+.card-image-container {
   width: 100%;
+  position: relative;
+  background: black;
+}
+
+.card-image-container img {
+  width: 100%;
+  opacity: 0.62;
+  display: block;
+  /* to remove bottom margin from online */
+}
+
+.on-picture {
+  position: absolute;
+  height: fit-content;
+  margin: 0;
+  top: 50%;
+  /* centers the textblock */
+  left: 50%;
+  /* centers the textblock */
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  /* centers the textblock */
+  text-align: center;
+  z-index: 10;
+  font: Bold 16px/19px Montserrat;
+  text-transform: uppercase;
+  color: var(--color-3);
+}
+
+.tags {
+  font: 9px/10px Roboto;
+  color: #2B2E34;
+  margin: 20px 0;
+}
+
+.tags p {
+  display: inline;
+  padding: 5px 10px;
+  margin: 1px;
+  background: var(--color-3);
+}
+
+.project-card:hover .upper-bold {
+  text-decoration: underline;
+}
+
+.project-card:hover img {
+  opacity: 1;
+}
+
+.project-card:hover h4 {
+  text-decoration: underline;
+  /* color: white; */
+}
+
+.other-projects {
+  margin-top: 80px;
 }
 
 /* 4 THOUGHTS */
 
-.thoughts img {
-  width: 100%;
+.thoughts {
+  font: 17px/32px Roboto;
 }
 
+.thoughts p {
+  margin: 0;
+  line-height: 32px;
+}
+
+.thoughts img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.more-thoughts {
+  margin-top: 80px;
+}
+
+.more-thoughts .project-card {
+  margin-bottom: 1em;
+}
+
+.project-card:hover strong {
+  text-decoration: underline;
+}
 
 /* 5 SKILLS */
 
@@ -183,9 +299,10 @@ h3 {
 }
 
 ul {
+  width: 200px;
   font: 17px/29px Roboto;
   list-style: none;
-  padding: 0 20px;
+  padding: 0 15px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 40px;
@@ -232,6 +349,8 @@ ul {
   text-decoration: underline;
 }
 
+
+
 /* FOOTER */
 
 footer {
@@ -249,12 +368,20 @@ footer h3 {
   margin-bottom: 1em;
 }
 
-footer ul {
-  font: 17px/29px Roboto;
+.contact {
   color: var(--color-bg1);
+  font: 17px/29px Roboto;
   margin-bottom: 0;
 }
 
+footer ul {
+  width: fit-content;
+  margin-bottom: 0;
+}
+
+footer a:hover .mail {
+  text-decoration: underline;
+}
 
 
 
@@ -274,23 +401,260 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+.only-desktop-block,
+.only-desktop {
+  display: none;
+}
 
 
-/* DESKTOP */
 
-@media (min-width: 700px) {
 
-  header {
-    padding: 100px 15% 0 15%;
+
+
+
+
+/************ DESKTOP **************/
+
+
+
+@media (min-width: 600px) {
+
+  /* GENERAL CHANGES */
+
+  /* header,
+  .portfolio-section {
+    
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: auto;
+  }
+   */
+
+}
+
+@media (min-width: 768px) {
+
+  header,
+  .portfolio-section {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
   }
 
   .only-desktop {
     display: inline;
   }
 
+  .only-desktop-block {
+    display: block;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+
+
+  article {
+    max-width: 1080px;
+    margin: auto;
+  }
+
+
+  /* HEADER */
+
+  h1 {
+    font: Bold 78px/92px Montserrat
+  }
+
+  .sub-titel {
+    font: 50px/61px Montserrat
+  }
+
+  header p {
+    font: 28px/33px Roboto;
+  }
+
+  .content-container-header {
+    height: 555px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    border: 4px Solid White;
+  }
+
+  .icon-img {
+    width: 32px;
+  }
+
+  .profile-pic {
+    width: 260px;
+    height: 260px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    border: 4px Solid White;
+  }
+
+  /* MAIN */
+
+  .portfolio-section {
+    padding-top: 124px;
+    padding-bottom: 124px;
+    font: 30px/50px Montserrat;
+  }
+
+  h2 {
+    font: Bold 48px/58px Montserrat;
+    padding: 3px 15px;
+    margin-bottom: 70px;
+    ;
+  }
+
+  h3 {
+    font: Bold 38px/47px Montserrat;
+  }
+
+  h4 {
+    font: Bold 30px/41px Roboto;
+  }
+
+
+  .red-desktop {
+    color: var(--color-1);
+  }
+
+
+  /* 1 INTRO */
+
+  .initial {
+    width: 110px;
+    height: 50px;
+    /* same as line height */
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+    /* align at baseline top */
+  }
+
+  .line {
+    width: 80px;
+    height: 4px;
+    background: var(--color-1);
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-1);
+    margin-left: -3px;
+  }
+
+
+  /* 3 PROJECTS */
+  .project-card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .project-card {
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 522px;
+    margin-top: 0;
+    font: 25px/41px Roboto;
+  }
+
+  .on-picture {
+    font: Bold 28px/34px Montserrat;
+  }
+
+  .tags {
+    font: 16px/19px Roboto;
+  }
+
+
+  .other {
+    max-width: 800px;
+  }
+
+
+  .other-projects p {
+    margin-left: 10px;
+  }
+
+
+  /* 4 THOUGHTS */
+
+  .thoughts {
+    font: 25px/41px Roboto;
+  }
+
+  .thoughts p {
+    line-height: 41px;
+  }
+
+  .thoughts img {
+    margin-bottom: 50px;
+  }
+
+
+
+  /* 5 SKILLS */
+
+  ul {
+    min-width: 40%;
+    font: 25px/41px Roboto;
+    list-style: none;
+    padding: 0 15px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+
+  /* 6 MORE */
+
+  .more-icon-link {
+    width: 160px;
+  }
+
+  .icon-more {
+    border: 5px solid var(--color-1);
+    width: 150px;
+    height: 150px;
+    margin-bottom: 35px;
+  }
+
+  .icon-img-more {
+    width: 60px;
+  }
+
+  .more-text {
+    font: Bold 25px/41px Roboto;
+  }
+
+  /* FOOTER */
+
+  footer {
+    height: 573px
+  }
+
+  footer h3 {
+    margin-bottom: 1em;
+  }
+
+  .contact {
+    font: 30px/50px Montserrat;
+    color: var(--color-bg1);
+  }
 
 
 }
+
 
 
 /*

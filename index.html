@@ -17,7 +17,7 @@
 
     <!-- <picture></picture> -->
 
-    <div class="content-container-header">
+    <article class="content-container-header">
       <div>
         <a class="icon" href="#">
           <img class="icon-img" src="mobile/linkedin_white.svg" alt="LinkedIn">
@@ -31,14 +31,14 @@
       </div>
       <div class="header-text-box">
         <p>Portfolio:&emsp;<strong>Olle Alm</strong></p>
-        <h1>frontend developer</h1>
+        <h1>frontend <br>developer</h1>
         <h1 class="sub-titel">+ digital designer</h1>
       </div>
       <img class="profile-pic"
         src="https://www.devonshirehousenetwork.co.uk/wp-content/uploads/2015/06/blank-profile-270x300.jpg"
         alt="Porträtt">
 
-    </div>
+    </article>
   </header>
 
   <!-- MAIN -->
@@ -65,7 +65,9 @@
   <section class="portfolio-section tech">
     <article>
       <h2>Tech</h2>
-      <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s,
+      <p>HTML, CSS, Flexbox, <span class="red-desktop">JavaScript,</span> ES6, JSX, <span
+          class="red-desktop">React,</span> React Hooks, Redux, <span class="red-desktop">Node.js,</span> Mongo DB, Web
+        Accessibly, API:s,
         mob-programming, pair-programming, Github.</p>
     </article>
   </section>
@@ -73,137 +75,258 @@
   <!-- Section 3 Projects -->
 
   <section class="portfolio-section dark projects">
-    <article>
-      <h2>Feautured Projects</h2>
+    <h2>Feautured Projects</h2>
+
+    <article class="project-card-container">
 
       <a class="project-card" href="project-link">
-        <img src="mobile/6156726f09eeb8354e22b0ed869bda59-1@2x.png" alt="Project 1">
-        <h4>Sunny side up</h4>
-        <p>WEATHER APP. Web app build in Javascript using open weather API >></p>
-        <p>HTML 5</p>
-        <p>CSS 3</p>
-        <p>SASS</p>
-        <p>JS ES6</p>
+        <div class="card-image-container">
+          <img src="mobile/6156726f09eeb8354e22b0ed869bda59-1@2x.png" alt="Project 1">
+          <h4 class="on-picture">Sunny side up</h4>
+        </div>
+        <p><span class="red upper-bold">WEATHER APP</span>&ensp;Web app build in Javascript using open weather
+          API&ensp;<span class="red upper-bold">≫</span></p>
+        <div class="tags">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>SASS</p>
+          <p>JavaScript ES6</p>
+        </div>
       </a>
 
       <a class="project-card" href="project-link">
-        <img src="mobile/6156726f09eeb8354e22b0ed869bda59-1@2x.png" alt="Project 1">
-        <h4>Titel</h4>
-        <p>Text</p>
-        <p>Tag HTML</p>
-        <p>Tag HTML</p>
-        <p>Tag HTML</p>
-        <p>Tag HTML</p>
+        <div class="card-image-container">
+          <img src="mobile/6156726f09eeb8354e22b0ed869bda59-1@2x.png" alt="Project 1">
+          <h4 class="on-picture">Project 2</h4>
+        </div>
+        <p><span class="red upper-bold">Another app</span>&ensp;Web app build in Javascript using open weather
+          API&ensp;<span class="red upper-bold">≫</span></p>
+        <div class="tags">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>REACT</p>
+          <p>JavaScript ES6</p>
+        </div>
       </a>
 
     </article>
-    <article class="project"></article>
-    <article class="project"></article>
-    <article class="project"></article>
+    <article class="project-card-container">
 
-    <h3>Other Projects</h3>
+      <a class="project-card only-desktop-block" href="project-link">
+        <div class="card-image-container">
+          <img src="mobile/6156726f09eeb8354e22b0ed869bda59-1@2x.png" alt="Project 1">
+          <h4 class="on-picture">Sunny side up</h4>
+        </div>
+        <p><span class="red upper-bold">WEATHER APP</span>&ensp;Web app build in Javascript using open weather
+          API&ensp;<span class="red upper-bold">≫</span></p>
+        <div class="tags">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>SASS</p>
+          <p>JavaScript ES6</p>
+        </div>
+      </a>
 
-    <article class="more-projects"></article>
+      <a class="project-card only-desktop-block" href="project-link">
+        <div class="card-image-container">
+          <img src="mobile/6156726f09eeb8354e22b0ed869bda59-1@2x.png" alt="Project 1">
+          <h4 class="on-picture">Project 2</h4>
+        </div>
+        <p><span class="red upper-bold">Another app</span>&ensp;Web app build in Javascript using open weather
+          API&ensp;<span class="red upper-bold">≫</span></p>
+        <div class="tags">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>REACT</p>
+          <p>JavaScript ES6</p>
+        </div>
+      </a>
+
+    </article>
+
+    <article class="other-projects">
+
+      <h3>Other Projects</h3>
+
+      <a class="project-card other only-mobile" href="project-link">
+        <p><span class="red upper-bold">Another app</span>&ensp;Web app build in Javascript using open weather
+          API&ensp;<span class="red upper-bold">≫</span></p>
+        <div class="tags">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>REACT</p>
+          <p>JavaScript ES6</p>
+        </div>
+      </a>
+
+      <a class="project-card other only-mobile" href="project-link">
+        <p><span class="red upper-bold">Another app</span>&ensp;Web app build in Javascript using open weather
+          API&ensp;<span class="red upper-bold">≫</span></p>
+        <div class="tags">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>REACT</p>
+          <p>JavaScript ES6</p>
+        </div>
+      </a>
+
+      <a class="project-card other" href="project-link">
+        <p><span class="red upper-bold">Another app</span>&ensp;Web app build in Javascript using open weather
+          API&ensp;<span class="red upper-bold">≫</span></p>
+        <div class="tags">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>REACT</p>
+          <p>JavaScript ES6</p>
+        </div>
+      </a>
+
+      <a class="project-card other" href="project-link">
+        <p><span class="red upper-bold">Another app</span>&ensp;Web app build in Javascript using open weather
+          API&ensp;<span class="red upper-bold">≫</span></p>
+        <div class="tags">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>REACT</p>
+          <p>JavaScript ES6</p>
+        </div>
+      </a>
+
+    </article>
 
   </section>
 
   <!-- Section 4 Thoughts  -->
 
   <section class="portfolio-section thoughts">
+
     <h2>My thoughts <span class="only-desktop">about code</span></h2>
 
-    <a class="project-card" href="project-link">
-      <img src="mobile/671efedfde84106f4952e1242aba9bc3@2x.png" alt="Project 1">
-      <p>DEC 2019</p>
-      <h4>How to stop being scared: Learning to love code</h4>
-      <p>Writing code is less about “just working”. Instead, it’s
-        much more about creativity. It’s similar to creative writing in that the author architecting a story must use an
-        assortment of tools and components (i.e., content) in such a way to satisfy a particular objective. >></p>
-    </a>
+    <article class="project-card-container">
 
-    <article class="article"></article>
-    <h3>More thoughts</h3>
+      <a class="project-card" href="project-link">
+        <img src="mobile/671efedfde84106f4952e1242aba9bc3@2x.png" alt="Project 1">
+        <p><span class="red">SEP 2019</span></p>
+        <h4>How to stop being scared: Learning to love code</h4>
+        <p>Writing code is less about “just working”. Instead, it’s
+          much more about creativity. It’s similar to creative writing in that the author architecting a story must use
+          an
+          assortment of tools and components (i.e., content) in such a way to satisfy a particular objective. <span
+            class="red upper-bold">≫</span></p>
+      </a>
+
+      <a class="project-card only-desktop-block" href="project-link">
+        <img src="mobile/671efedfde84106f4952e1242aba9bc3@2x.png" alt="Project 1">
+        <p><span class="red">SEP 2019</span></p>
+        <h4>How to stop being scared: Learning to love code</h4>
+        <p>Writing code is less about “just working”. Instead, it’s
+          much more about creativity. It’s similar to creative writing in that the author architecting a story must use
+          an
+          assortment of tools and components (i.e., content) in such a way to satisfy a particular objective. <span
+            class="red upper-bold">≫</span></p>
+      </a>
+
+    </article>
+
+    <article class="more-thoughts">
+
+      <h3>More thoughts</h3>
+
+      <a class="project-card other only-mobile" href="project-link">
+        <p><span class="red">SEP 2019. </span><strong>5 Apps that will make coding
+            easier.</strong> <span class="red upper-bold">≫</span></p>
+      </a>
+      <a class="project-card other" href="project-link">
+        <p><span class="red">SEP 2019. </span><strong>5 Apps that will make coding easier.</strong> <span
+            class="red upper-bold">≫</span></p>
+      </a>
+      <a class="project-card other" href="project-link">
+        <p><span class="red">SEP 2019. </span><strong>5 Apps that will make coding easier.</strong> <span
+            class="red upper-bold">≫</span></p>
+      </a>
+    </article>
   </section>
 
   <!-- Section 5 Skills -->
 
   <section class="portfolio-section dark skills">
-    <h2>Skills</h2>
+    <article>
+      <h2>Skills</h2>
 
-    <!-- Testa Grid?? -->
+      <!-- Testa Grid?? -->
 
-    <div class="list-container">
-      <ul>
-        <li class="list-header">Code</li>
-        <li>HTML 5</li>
-        <li>CSS</li>
-        <li>JavaScript ES6</li>
-        <li>React</li>
-        <li>HTML 5</li>
-        <li>HTML 5</li>
-      </ul>
+      <div class="list-container">
+        <ul>
+          <li class="list-header">Code</li>
+          <li>HTML 5</li>
+          <li>CSS</li>
+          <li>JavaScript ES6</li>
+          <li>React</li>
+          <li>ARIA</li>
+          <li>HTML 5</li>
+        </ul>
 
-      <ul>
-        <li class="list-header">Upcoming</li>
-        <li>Redux</li>
-        <li>CSS</li>
-        <li>JavaScript ES6</li>
-        <li>React</li>
-      </ul>
+        <ul>
+          <li class="list-header">Upcoming</li>
+          <li>Redux</li>
+          <li>CSS</li>
+          <li>JavaScript ES6</li>
+          <li>React</li>
+        </ul>
 
-      <ul>
-        <li class="list-header">Toolbox</li>
-        <li>Photoshop</li>
-        <li>CSS</li>
-        <li>JavaScript ES6</li>
-        <li>React</li>
-        <li>HTML 5</li>
-        <li>HTML 5</li>
-      </ul>
+        <ul>
+          <li class="list-header">Toolbox</li>
+          <li>Photoshop</li>
+          <li>CSS</li>
+          <li>JavaScript ES6 Photoshop</li>
+          <li>React</li>
+          <li>HTML 5</li>
+          <li>HTML 5</li>
+        </ul>
 
-      <ul>
-        <li class="list-header">More</li>
-        <li>Design</li>
-        <li>CSS</li>
-        <li>JavaScript ES6</li>
-        <li>React</li>
-        <li>HTML 5</li>
-      </ul>
-    </div>
-
+        <ul>
+          <li class="list-header">More</li>
+          <li>Design</li>
+          <li>CSS</li>
+          <li>JavaScript ES6</li>
+          <li>React</li>
+          <li>HTML 5</li>
+        </ul>
+      </div>
+    </article>
   </section>
 
   <!-- Section 6 More -->
 
   <section class="portfolio-section more">
+    <article>
+      <h2>For more</h2>
 
-    <h2>For more</h2>
+      <div class="more-container-icon">
 
-    <div class="more-container-icon">
+        <a class="more-icon-link" href="#">
+          <div class="icon icon-more">
+            <img class="icon-img-more" src="mobile/linkedin_red.svg" alt="LinkedIn">
+          </div>
+          <p class="more-text">LinkedIn</p>
+        </a>
 
-      <a class="more-icon-link" href="#">
-        <div class="icon icon-more">
-          <img class="icon-img-more" src="mobile/linkedin_red.svg" alt="LinkedIn">
-        </div>
-        <p class="more-text">LinkedIn</p>
-      </a>
+        <a class="more-icon-link" href="#">
+          <div class="icon icon-more">
+            <img class="icon-img-more" src="mobile/github_red.svg" alt="GitHub">
+          </div>
+          <p class="more-text">GitHub</p>
+        </a>
 
-      <a class="more-icon-link" href="#">
-        <div class="icon icon-more">
-          <img class="icon-img-more" src="mobile/github_red.svg" alt="GitHub">
-        </div>
-        <p class="more-text">GitHub</p>
-      </a>
+        <a class="more-icon-link" href="#">
+          <div class="icon icon-more">
+            <img class="icon-img-more" src="mobile/stack_red.svg" alt="StackOverflow">
+          </div>
+          <p class="more-text">StackOverflow</p>
+        </a>
 
-      <a class="more-icon-link" href="#">
-        <div class="icon icon-more">
-          <img class="icon-img-more" src="mobile/stack_red.svg" alt="StackOverflow">
-        </div>
-        <p class="more-text">StackOverflow</p>
-      </a>
-
-    </div>
-
+      </div>
+    </article>
   </section>
 
   <!-- </main> -->
@@ -212,11 +335,13 @@
 
   <footer>
     <h3>Contact</h3>
-    <ul>
-      <li><strong>Olle Alm</strong></li>
-      <li>+46 (0)73-925 78 30</li>
-      <li>olle.alm@me.com</li>
-    </ul>
+    <a class="contact" href="mailto:olle.alm@me.com">
+      <ul>
+        <li><strong>Olle Alm</strong></li>
+        <li>+46 (0)73-925 78 30</li>
+        <li class="mail">olle.alm@me.com</li>
+      </ul>
+    </a>
   </footer>
 </body>
 
