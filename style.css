@@ -1,25 +1,26 @@
 /* GLOBAL */
 
 :root {
-  --color-1: #FA382F;
+  /* --color-1: #FA382F;
   --color-2: #072BCE;
   --color-3: #FDDFE7;
-  --color-text: black;
+  --color-text: yellow;
   --color-bg1: white;
-  --color-bg2: #F4F4F4;
+  --color-bg2: #F4F4F4; */
 
-  /* --color-1: red;
-  --color-2: blue;
-  --color-3: red;
-  --color-text: black;
-  --color-bg1: white;
-  --color-bg2: lightgrey; */
+  --color-1: #fff;
+  --color-2: rgb(2, 1, 1);
+  --color-3: #fff;
+  --color-text: white;
+  --color-bg1: #00f;
+  --color-bg2: #000;
 }
 
 body {
   background-color: var(--color-bg1);
   margin: 0;
   color: var(--color-text);
+  color:
 }
 
 article {
@@ -108,7 +109,7 @@ header {
   /* background-image: url(); */
   background-image: linear-gradient(rgb(7, 255, 181), rgb(0, 217, 255));
   padding: 100px 40px 0 40px;
-  color: var(--color-bg1)
+  color: var(--color-text)
 }
 
 .header-text-box {
@@ -386,12 +387,12 @@ footer {
 }
 
 footer h3 {
-  color: var(--color-bg1);
+  color: var(--color-text);
   margin-bottom: 1em;
 }
 
 .contact {
-  color: var(--color-bg1);
+  color: var(--color-text);
   font: 17px/29px Roboto;
   margin-bottom: 0;
 }
@@ -410,7 +411,7 @@ footer a:hover .mail {
 /* SCROLL BAR */
 
 body::-webkit-scrollbar {
-  width: 0.3rem;
+  width: 1rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -418,7 +419,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--color-bg1);
+  background: var(--color-1);
 }
 
 
@@ -657,7 +658,7 @@ body::-webkit-scrollbar-thumb {
 
   .contact {
     font: 30px/50px Montserrat;
-    color: var(--color-bg1);
+    color: var(--color-text);
   }
 
 
