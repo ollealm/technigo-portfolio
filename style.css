@@ -9,10 +9,10 @@
   --color-bg2: #F4F4F4; */
 
   --color-1: #fff;
-  --color-2: rgb(2, 1, 1);
-  --color-3: #fff;
+  --color-2: #000;  /* footer, h2 */
+  --color-3: rgb(255, 255, 255);  /* h2, tags, project text*/
   --color-text: white;
-  --color-bg1: #00f;
+  --color-bg1: #00f; /* */ 
   --color-bg2: #000;
 }
 
@@ -52,9 +52,9 @@ h6 {
 
 h2 {
   padding: 3px 8px;
-  background: var(--color-1);
+  background: var(--color-2);
   width: fit-content;
-  color: var(--color-bg1);
+  color: var(--color-3);
   text-transform: uppercase;
   letter-spacing: 1px;
   font: Bold 22px/27px Montserrat;
@@ -107,9 +107,46 @@ a:focus {
 
 header {
   /* background-image: url(); */
-  background-image: linear-gradient(rgb(7, 255, 181), rgb(0, 217, 255));
-  padding: 100px 40px 0 40px;
-  color: var(--color-text)
+  /* background-image: linear-gradient(rgb(7, 255, 181), rgb(0, 217, 255)); */
+  padding: 0px 40px 0 40px;
+  color: var(--color-text);
+
+  /* copy */
+  position: relative;
+  height: 400px; /* video height */
+  /* text-align: center;
+  overflow: hidden;
+  margin-bottom: 80px; */
+
+}
+
+video {
+  min-height: 400px;
+  min-width: 640px; /* video ratio */
+
+  /* centers video */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.content-container-header {
+  /* height: 200px;  */
+  padding-top: 50px;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  
+  /* copy */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);    */
+
 }
 
 .header-text-box {
@@ -117,16 +154,6 @@ header {
   height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-
-.content-container-header {
-  height: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -141,6 +168,10 @@ header {
 
 .icon-img {
   width: 20px;
+}
+
+.codepen {
+  width: 28px;
 }
 
 .profile-pic {
@@ -214,12 +245,12 @@ header {
 .card-image-container {
   width: 100%;
   position: relative;
-  background: black;
+  background: var(--color-bg2);
 }
 
 .card-image-container img {
   width: 100%;
-  opacity: 0.62;
+  opacity: 0.8;
   display: block;
   /* to remove bottom margin from online */
 }
@@ -266,7 +297,6 @@ header {
 
 .project-card:hover h4 {
   text-decoration: underline;
-  color: black;
 }
 
 .other-projects {
@@ -359,6 +389,10 @@ ul {
 
 .icon-img-more {
   width: 24px;
+}
+
+.codepen-more {
+  width: 32px;
 }
 
 .more-text {
@@ -501,8 +535,8 @@ body::-webkit-scrollbar-thumb {
 
   header,
   .portfolio-section {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: auto;
   }
 
@@ -515,9 +549,18 @@ body::-webkit-scrollbar-thumb {
 
 
   /* HEADER */
+  header {
+    height: 600px;
+  }
 
+  video {
+    min-height: 600px;
+    min-width: 960px; /* video ratio */
+  }
+    
   .content-container-header {
-    height: 555px;
+    /* height: 555px; */
+    padding-top: 100px;
   }
 
   .icon {
@@ -529,6 +572,10 @@ body::-webkit-scrollbar-thumb {
 
   .icon-img {
     width: 32px;
+  }
+
+  .codepen {
+    width: 42px;
   }
 
   .profile-pic {
@@ -638,6 +685,10 @@ body::-webkit-scrollbar-thumb {
 
   .icon-img-more {
     width: 60px;
+  }
+
+  .codepen-more {
+    width: 85px;
   }
 
   .more-text {
