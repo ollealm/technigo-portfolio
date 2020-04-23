@@ -250,7 +250,7 @@ video {
 
 .card-image-container img {
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.5;
   display: block;
   /* to remove bottom margin from online */
 }
@@ -293,10 +293,12 @@ video {
 
 .project-card:hover img {
   opacity: 1;
+  transition: 0.3s;
 }
 
-.project-card:hover h4 {
-  text-decoration: underline;
+.project-card:hover .on-picture {
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .other-projects {
@@ -327,6 +329,10 @@ video {
 
 .more-thoughts .project-card {
   margin-bottom: 1em;
+}
+
+.project-card:hover .thoughts-h4 {
+  text-decoration: underline;
 }
 
 .project-card:hover strong {
