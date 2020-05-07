@@ -1,6 +1,7 @@
 # Technigo Portfolio
 
 Creating a technical portfolio after a given design
+Pure HTML5 and CSS3
 
 ## The problem
 

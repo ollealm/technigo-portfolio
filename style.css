@@ -8,19 +8,18 @@
   --color-bg1: white;
   --color-bg2: #F4F4F4; */
 
-  --color-1: #fff;
-  --color-2: #000;  /* footer, h2 */
-  --color-3: rgb(255, 255, 255);  /* h2, tags, project text*/
+  --color-1: #f0a;
+  --color-2: black;  /* footer, h2 */
+  --color-3: white;  /* h2, tags, project text*/
   --color-text: white;
-  --color-bg1: #00f; /* */ 
-  --color-bg2: #000;
+  --color-bg1: #00d; /* */ 
+  --color-bg2: black;
 }
 
 body {
   background-color: var(--color-bg1);
   margin: 0;
   color: var(--color-text);
-  color:
 }
 
 article {
@@ -33,17 +32,17 @@ article {
 /* FONTS */
 
 h1 {
-  font: Bold 40px/49px Montserrat;
+  font: Bold 40px/49px Montserrat, sans-serif;
   margin: 0;
 }
 
 .sub-titel {
-  font: 24px/29px Montserrat;
+  font: 24px/29px Montserrat, sans-serif;
   margin: 0;
 }
 
 h6 {
-  font: 13px/15px Roboto;
+  font: 13px/15px Roboto, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0;
@@ -57,26 +56,34 @@ h2 {
   color: var(--color-3);
   text-transform: uppercase;
   letter-spacing: 1px;
-  font: Bold 22px/27px Montserrat;
+  font: Bold 22px/27px Montserrat, sans-serif;
   margin: 0 auto 35px auto;
   text-align: center;
 }
 
+.dark h2 {
+  background: var(--color-1);
+}
+
 h3 {
-  font: Bold 21px/25px Montserrat;
-  color: var(--color-1);
+  font: Bold 21px/25px Montserrat, sans-serif;
+  color: var(--color-3);
   margin: 0 auto 35px auto;
   text-align: center;
   text-transform: uppercase;
 }
 
+.dark h3 {
+  color: var(--color-1);
+}
+
 h4 {
-  font: Bold 21px/32px Roboto;
+  font: Bold 21px/32px Roboto, sans-serif;
   margin: 0;
 }
 
 h5 {
-  font: Bold 17px/32px Roboto;
+  font: Bold 17px/32px Roboto, sans-serif;
 }
 
 .red {
@@ -84,8 +91,11 @@ h5 {
   font-weight: normal;
 }
 
+.date {
+  letter-spacing: 1px;
+}
+
 .upper-bold {
-  color: var(--color-1);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -96,8 +106,8 @@ a {
 }
 
 a:focus {
-  outline: 3px dashed var(--color-1);
-  outline-offset: 15px;
+  outline: 3px dashed var(--color-3);
+  outline-offset: 10px;
 }
 
 
@@ -164,7 +174,17 @@ video {
   height: 40px;
   display: inline-flex;
   justify-content: center;
+  background-color: rgba(0, 0, 0, .25);
+  transition: transform .1s ease-out, background-color .1s ease-out;
 }
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 1);
+  transform: scale(1.02);
+  transition: transform .1s ease-in, background-color .1s ease-in;
+
+}
+
 
 .icon-img {
   width: 20px;
@@ -188,7 +208,7 @@ video {
 
 .portfolio-section {
   padding: 58px 36px 40px 36px;
-  font: 17px/29px Montserrat;
+  font: 17px/29px Montserrat, sans-serif;
 }
 
 .dark {
@@ -269,7 +289,7 @@ video {
   /* centers the textblock */
   text-align: center;
   z-index: 10;
-  font: Bold 16px/19px Montserrat;
+  font: Bold 16px/19px Montserrat, sans-serif;
   text-transform: uppercase;
   color: var(--color-3);
 }
@@ -277,7 +297,8 @@ video {
 .tags {
   font: 9px/10px Roboto;
   color: #2B2E34;
-  margin: 20px 0;
+  /* margin: 20px 0; */
+  padding-bottom: 15px;
 }
 
 .tags p {
@@ -293,24 +314,43 @@ video {
 
 .project-card:hover img {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .project-card:hover .on-picture {
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .other-projects {
   margin-top: 80px;
 }
 
+.other {
+  display: flex;
+}
 
+.other .card-image-container {
+  width: 130px;
+  margin: 0 20px 0 0;
+  flex-shrink: 1;
+}
+
+.other .card-text-container {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.other img {
+  object-fit: cover;
+  object-position: 0 0;
+  height: 100%;
+}
 
 /* 4 THOUGHTS */
 
 .thoughts {
-  font: 17px/32px Roboto;
+  font: 17px/32px Roboto, sans-serif;
 }
 
 .thoughts p {
@@ -359,7 +399,7 @@ video {
 
 ul {
   width: 200px;
-  font: 17px/29px Roboto;
+  font: 17px/29px Roboto, sans-serif;
   list-style: none;
   padding: 0 15px;
   text-align: center;
@@ -383,12 +423,12 @@ ul {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: var(--color-1);
+  color: var(--color-3);
   width: 60px;
 }
 
 .icon-more {
-  border: 3px solid var(--color-1);
+  border: 3px solid var(--color-3);
   width: 60px;
   height: 60px;
 }
@@ -402,7 +442,7 @@ ul {
 }
 
 .more-text {
-  font: Bold 12px/40px Roboto;
+  font: Bold 12px/40px Roboto, sans-serif;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin: 0;
@@ -480,7 +520,7 @@ body::-webkit-scrollbar-thumb {
 /***********************************/
 
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 
   /* GLOBAL */
 
@@ -506,33 +546,29 @@ body::-webkit-scrollbar-thumb {
   /* FONTS */
 
   h1 {
-    font: Bold 78px/92px Montserrat
+    font: Bold 78px/92px Montserrat, sans-serif;
   }
 
   .sub-titel {
-    font: 50px/61px Montserrat
+    font: 50px/61px Montserrat, sans-serif;
   }
 
   h6 {
-    font: 28px/33px Roboto;
+    font: 28px/33px Roboto, sans-serif;
   }
 
   h2 {
-    font: Bold 48px/58px Montserrat;
+    font: Bold 48px/58px Montserrat, sans-serif;
     padding: 3px 15px;
     margin-bottom: 70px;
   }
 
   h3 {
-    font: Bold 38px/47px Montserrat;
+    font: Bold 38px/47px Montserrat, sans-serif;
   }
 
   h4 {
-    font: Bold 30px/41px Roboto;
-  }
-
-  .red-desktop {
-    color: var(--color-1);
+    font: Bold 30px/41px Roboto, sans-serif;
   }
 
 
@@ -547,9 +583,9 @@ body::-webkit-scrollbar-thumb {
   }
 
   .portfolio-section {
-    padding-top: 124px;
-    padding-bottom: 124px;
-    font: 30px/50px Montserrat;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    font: 30px/50px Montserrat, sans-serif;
   }
 
 
@@ -569,10 +605,15 @@ body::-webkit-scrollbar-thumb {
     padding-top: 100px;
   }
 
+  .icons-container {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .icon {
     width: 80px;
     height: 80px;
-    margin-left: 10px;
     border: 4px Solid White;
   }
 
@@ -625,31 +666,47 @@ body::-webkit-scrollbar-thumb {
     margin-left: 20px;
     max-width: 522px;
     margin-top: 0;
-    font: 25px/41px Roboto;
+    font: 25px/41px Roboto, sans-serif;
   }
 
   .on-picture {
-    font: Bold 28px/34px Montserrat;
+    font: Bold 28px/34px Montserrat, sans-serif;
   }
 
   .tags {
-    font: 16px/19px Roboto;
-  }
-
-  .other {
-    max-width: 800px;
+    font: 16px/19px Roboto, sans-serif;
   }
 
   .other-projects p {
     margin-left: 10px;
   }
 
+  .other {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .other .card-image-container {
+    width: 300px;
+    min-width: 220px;
+    flex-shrink: 1;
+  }
+  
+  .other .card-text-container {
+    width: 720px;
+    flex-shrink: 1;
+  }
+
+  .other img {
+    object-fit: contain;
+  } 
+
 
 
   /* 4 THOUGHTS */
 
   .thoughts {
-    font: 25px/41px Roboto;
+    font: 25px/41px Roboto, sans-serif;
   }
 
   .thoughts p {
@@ -666,7 +723,7 @@ body::-webkit-scrollbar-thumb {
 
   ul {
     min-width: 40%;
-    font: 25px/41px Roboto;
+    font: 25px/41px Roboto, sans-serif;
     list-style: none;
     padding: 0 15px;
     text-align: center;
@@ -683,7 +740,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .icon-more {
-    border: 5px solid var(--color-1);
+    border-width: 5px;
     width: 150px;
     height: 150px;
     margin-bottom: 35px;
@@ -694,7 +751,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .codepen-more {
-    width: 85px;
+    width: 84px;
   }
 
   .more-text {
