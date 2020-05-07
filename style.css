@@ -124,15 +124,14 @@ header {
   /* copy */
   position: relative;
   height: 400px; /* video height */
-  /* text-align: center;
-  overflow: hidden;
-  margin-bottom: 80px; */
+  /* height: 100vh; */
 
 }
 
 video {
-  min-height: 400px;
-  min-width: 640px; /* video ratio */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 
   /* centers video */
   position: absolute;
@@ -151,6 +150,7 @@ video {
   align-items: flex-end;
   justify-content: space-between;
   
+  overflow: visible;
   /* copy */
   /* position: absolute;
   top: 50%;
@@ -270,7 +270,7 @@ video {
 
 .card-image-container img {
   width: 100%;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   display: block;
   /* to remove bottom margin from online */
 }
@@ -332,19 +332,24 @@ video {
 
 .other .card-image-container {
   width: 130px;
-  margin: 0 20px 0 0;
+  margin: 20px 10px 0 0;
   flex-shrink: 1;
 }
 
 .other .card-text-container {
-  width: 250px;
+  width: 70%;
   flex-shrink: 0;
 }
 
 .other img {
   object-fit: cover;
+  object-position: 50% 0;
+  height: 120px;
+  min-width: 60px;
+}
+
+.img-left {
   object-position: 0 0;
-  height: 100%;
 }
 
 /* 4 THOUGHTS */
@@ -593,11 +598,7 @@ body::-webkit-scrollbar-thumb {
   /* HEADER */
   header {
     height: 600px;
-  }
-
-  video {
-    min-height: 600px;
-    min-width: 960px; /* video ratio */
+    /* height: 100vh; */
   }
     
   .content-container-header {
@@ -660,6 +661,9 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
   }
 
+  .card-image-container img {
+    opacity: 0.6;
+  }
 
   .project-card {
     margin-right: 20px;
@@ -699,6 +703,7 @@ body::-webkit-scrollbar-thumb {
 
   .other img {
     object-fit: contain;
+    height: auto;
   } 
 
 
