@@ -1,38 +1,21 @@
-# Technigo Portfolio
+# Technigo Portfolio&ensp;|&ensp;[View Live &#10555;](https://olle-tech-portfolio.netlify.com/)
 
-Creating a technical portfolio after a given design
-Pure HTML5 and CSS3
-
-## The problem
-
-Acsessebility and crossbrowser testing
-
+Creating a technical portfolio after a given design in pure HTML5 and CSS3.
+Paying attention to accessibility, validate the code and cross browser testing.
 
 ### Used tools: 
+* browserstack.com – cross browser testing 
+* validator.w3.org – code validation
+* webaim.org/resources/contrastchecker/ – text contrast
+* wave.webaim.org/ – accessibility testing
+* caniuse.com – browser support
 
-browserstack.com for crossbrowser testing 
-
-validator.w3.org for code validation
-
-webaim.org/resources/contrastchecker/ for text contrast
-
-wave.webaim.org/ for accessebility testing
-
-caniuse.com for browser support
-
-
-### Code:
-
-alt attribute
-
-:focus pseudo-class
-
-
-### Read more:
-
-https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility
-
+## Core Tech
+* HTML5
+* CSS3
+* CSS Variables
+* alt attribute
+* :focus pseudo-class
 
 ## View it live
-
 https://olle-tech-portfolio.netlify.com/
