@@ -12,8 +12,9 @@
   --color-2: black;  /* footer, h2 */
   --color-3: white;  /* h2, tags, project text*/
   --color-text: white;
-  --color-bg1: #00d; /* */ 
-  --color-bg2: black;
+  /* --color-bg1: #00d;  */
+  --color-bg1: rgb(0, 0, 200);
+  --color-bg2: rgb(0, 0, 30);
 }
 
 body {
