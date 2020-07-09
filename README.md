@@ -1,6 +1,6 @@
 # Technigo Portfolio&ensp;|&ensp;[View Live &#10555;](https://olle-tech-portfolio.netlify.com/)
 
-Creating a technical portfolio after a given design in pure HTML5 and CSS3.
+A technical portfolio created after a given design in pure HTML5 and CSS3.
 Paying attention to accessibility, validate the code and cross browser testing.
 
 ### Used tools: 

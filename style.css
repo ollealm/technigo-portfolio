@@ -53,7 +53,8 @@ h6 {
 h2 {
   padding: 3px 8px;
   background: var(--color-2);
-  width: fit-content;
+  /* -moz-width: fit-content; */
+  width: max-content;
   color: var(--color-3);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -261,6 +262,7 @@ video {
   max-width: 400px;
   margin: 30px auto 58px auto;
   font: 17px/29px Roboto;
+  flex: 1;
 }
 
 .card-image-container {
@@ -278,14 +280,11 @@ video {
 
 .on-picture {
   position: absolute;
-  height: fit-content;
   margin: 0;
   top: 50%;
   /* centers the textblock */
   left: 50%;
   /* centers the textblock */
-  bottom: 0;
-  right: 0;
   transform: translate(-50%, -50%);
   /* centers the textblock */
   text-align: center;
@@ -484,7 +483,7 @@ footer h3 {
 }
 
 footer ul {
-  width: fit-content;
+  width: max-content;
   margin-bottom: 0;
 }
 
