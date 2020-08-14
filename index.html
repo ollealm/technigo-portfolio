@@ -1,523 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olle Alm – Technical Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Olle Alm – Technical Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <!-- HEADER -->
 
-<body>
+    <header>
+      <video autoplay loop muted>
+        <source src="assets/video/lines2_1080.mp4" type="video/mp4" />
+        <p>Your browser doesn't support HTML5 video.</p>
+      </video>
 
-  <!-- HEADER -->
+      <article class="content-container-header">
+        <div class="icons-container">
+          <a
+            class="icon"
+            href="https://www.linkedin.com/in/olle-a-87150a1a7/"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <img
+              class="icon-img"
+              src="assets/linkedin_white.svg"
+              alt="LinkedIn Logo"
+            />
+          </a>
+          <a
+            class="icon"
+            href="https://github.com/ollealm"
+            target="_blank"
+            title="GitHub"
+          >
+            <img
+              class="icon-img"
+              src="assets/github_white.svg"
+              alt="GitHub Logo"
+            />
+          </a>
+          <a
+            class="icon"
+            href="https://codepen.io/olleolle/pens/showcase"
+            target="_blank"
+            title="CodePen"
+          >
+            <img
+              class="icon-img codepen"
+              src="assets/codepen_white.svg"
+              alt="CodePen Logo"
+            />
+          </a>
+        </div>
+        <div class="header-text-box">
+          <h6>Portfolio:&ensp;<strong>Olle Alm</strong></h6>
+          <h1>frontend <br />developer</h1>
+          <h1 class="sub-titel">and designer</h1>
+        </div>
+        <img
+          class="profile-pic"
+          src="assets/profile_picture3.jpg"
+          alt="Profile Picture"
+        />
+      </article>
+    </header>
 
-  <header>
+    <!-- MAIN -->
 
-    <video autoplay loop muted>
-      <source src="assets/video/lines2_1080.mp4" type="video/mp4">
-      <p>Your browser doesn't support HTML5 video.</p>
-    </video>
+    <!-- Section 1 Intro -->
 
-    <article class="content-container-header">
-      <div class="icons-container">
-        <a class="icon" href="https://www.linkedin.com/in/olle-a-87150a1a7/" target="_blank" title="LinkedIn">
-          <img class="icon-img" src="assets/linkedin_white.svg" alt="LinkedIn Logo">
+    <section class="portfolio-section dark intro">
+      <article>
+        <p>
+          <span class="initial">
+            <span class="line"></span>
+            <span class="circle"></span>
+          </span>
+          Hi! I’m a designer turned web developer, looking for a position where
+          I can further grow within this new&nbsp;role.
+        </p>
+        <p>
+          I&nbsp;started as a freelance graphic designer in 2007 and since my
+          interests and skills have steadily shifted to be more technology
+          based. During my Masters, at Royal College of Art, I started to
+          experiment with coding as a design tool, and with the Technigo
+          Bootcamp I have now fully transitioned into frontend development.
+        </p>
+        <p>
+          I love the combination of strict logic with the dynamic playfulness
+          that coding offers, as well as the strong and sharing community. As a
+          developer I get to focus both my creativity and persistence on solving
+          problems at&nbsp;hand.
+        </p>
+      </article>
+    </section>
+
+    <!-- Section 2 Tech -->
+
+    <section class="portfolio-section tech">
+      <article>
+        <h2>Tech</h2>
+        <p>
+          JavaScript <strong>ES6</strong>, HTML, CSS, <strong>React</strong>,
+          React Hooks, <strong>Redux</strong>, Styled components, API:s,
+          Node.js, Express.js, Mongo DB, Mongoose, SQL, PHP,
+          <strong>Web&nbsp;Accessibly</strong>, Mob&#8209;programming,
+          Pair&#8209;programming, Unit testing,
+          <strong>Agile</strong>,&nbsp;Github. [<strong>Upcoming:</strong> SASS,
+          Python]
+        </p>
+      </article>
+    </section>
+
+    <!-- Section 3 Projects -->
+
+    <section class="portfolio-section dark projects">
+      <h2>Featured Projects</h2>
+
+      <article class="project-card-container">
+        <a
+          class="project-card"
+          href="https://github.com/ollealm/final-project"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/proj-final.png" alt="Final Project Screenshot" />
+            <h4 class="on-picture">Nutrient Search</h4>
+          </div>
+          <p>
+            <span class="upper-bold">Final Project</span>&ensp;MERN Stack
+            web-app to browse, sort, filter and save nutrition data from
+            Livsmedelsdatabasen.&nbsp;<span class="red upper-bold"
+              >&#10555;</span
+            >
+          </p>
+          <div class="tags">
+            <p>MERN</p>
+            <p>Redux</p>
+            <p>Mongoose</p>
+            <p>Styled Components</p>
+          </div>
         </a>
-        <a class="icon" href="https://github.com/ollealm" target="_blank" title="GitHub">
-          <img class="icon-img" src="assets/github_white.svg" alt="GitHub Logo">
+
+        <a
+          class="project-card"
+          href="https://github.com/ollealm/project-happy-thoughts-frontend"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img
+              src="assets/proj-happy-thoughts.jpg"
+              alt="Happy Thoughts Screenshot"
+            />
+            <h4 class="on-picture">Happy Thoughts</h4>
+          </div>
+          <p>
+            <span class="upper-bold">Twitter clone</span>&ensp;Post happy
+            thoughts, read others and give them a like. React site using a joint
+            API.&nbsp;<span class="red upper-bold">&#10555;</span>
+          </p>
+          <div class="tags">
+            <p>React</p>
+            <p>Thunk</p>
+            <p>Express.js</p>
+            <p>MongoDB</p>
+          </div>
         </a>
-        <a class="icon" href="https://codepen.io/olleolle/pens/showcase" target="_blank" title="CodePen">
-          <img class="icon-img codepen" src="assets/codepen_white.svg" alt="CodePen Logo">
-        </a>
-      </div>
-      <div class="header-text-box">
-        <h6>Portfolio:&ensp;<strong>Olle Alm</strong></h6>
-        <h1>frontend <br>developer</h1>
-        <h1 class="sub-titel">and designer</h1>
-      </div>
-      <img class="profile-pic" src="assets/profile_picture3.jpg" alt="Profile Picture">
-
-    </article>
-  </header>
-
-  <!-- MAIN -->
-
-  <!-- Section 1 Intro -->
-
-  <section class="portfolio-section dark intro">
-    <article>
-      <p>
-        <span class="initial">
-          <span class="line"></span>
-          <span class="circle"></span>
-        </span>
-        Hi! I’m a designer turned web developer, looking for a position where I can further grow within this
-        new&nbsp;role.
-      </p>
-      <p>
-        I&nbsp;started as a freelance graphic designer in 2007 and since my interests and skills have steadily shifted
-        to be more technology based. During my Masters, at Royal College of Art, I started to experiment with
-        coding as a design tool, and with the
-        Technigo Bootcamp I have now fully transitioned into frontend development.
-      </p>
-      <p>I love the combination of strict logic with the dynamic playfulness that coding offers, as well as the strong
-        and sharing community. As a developer I get to focus both my creativity and persistence on solving problems
-        at&nbsp;hand.
-      </p>
-    </article>
-  </section>
-
-  <!-- Section 2 Tech -->
-
-  <section class="portfolio-section tech">
-    <article>
-      <h2>Tech</h2>
-      <p> JavaScript <strong>ES6</strong>, HTML, CSS, <strong>React</strong>,
-        React Hooks, <strong>Redux</strong>, Styled components, API:s, Node.js, Express.js, Mongo DB, Mongoose,
-        <strong>Web&nbsp;Accessibly</strong>, Mob&#8209;programming, Pair&#8209;programming,
-        Unit testing, <strong>Agile</strong>,&nbsp;Github. [<strong>Upcoming:</strong> SASS, PHP, MySQL]</p>
-    </article>
-  </section>
-
-  <!-- Section 3 Projects -->
-
-  <section class="portfolio-section dark projects">
-    <h2>Featured Projects</h2>
-
-    <article class="project-card-container">
-
-      <a class="project-card" href="https://github.com/ollealm/final-project" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-final.png" alt="Final Project Screenshot">
-          <h4 class="on-picture">Nutrient Search</h4>
-        </div>
-        <p><span class="upper-bold">Final Project</span>&ensp;MERN Stack web-app to browse, sort, filter and save
-          nutrition data from Livsmedelsdatabasen.&nbsp;<span class="red upper-bold">&#10555;</span></p>
-        <div class="tags">
-          <p>MERN</p>
-          <p>Redux</p>
-          <p>Mongoose</p>
-          <p>Styled Components</p>
-        </div>
-      </a>
-
-      <a class="project-card" href="https://github.com/ollealm/project-happy-thoughts-frontend" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-happy-thoughts.jpg" alt="Happy Thoughts Screenshot">
-          <h4 class="on-picture">Happy Thoughts</h4>
-        </div>
-        <p><span class="upper-bold">Twitter clone</span>&ensp;Post happy thoughts, read others and give them a like.
-          React site using a
-          joint API.&nbsp;<span class="red upper-bold">&#10555;</span></p>
-        <div class="tags">
-          <p>React</p>
-          <p>Thunk</p>
-          <p>Express.js</p>
-          <p>MongoDB</p>
-        </div>
-      </a>
-
-    </article>
-    <article class="project-card-container">
-
-      <a class="project-card only-desktop-block" href="https://github.com/ollealm/project-weather-app" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-weather-app.jpg" alt="Wether App Screenshot">
-          <h4 class="on-picture">Good Weather</h4>
-        </div>
-        <p><span class="upper-bold">Weather App</span>&ensp;Web app in Vanilla JavaScript finding you some good weather,
-          using Open Weather API and Geolocation&nbsp;<span class="red upper-bold">&#10555;</span></p>
-        <div class="tags">
-          <p>JavaScript</p>
-          <p>API</p>
-          <p>JSON</p>
-          <p>Async</p>
-        </div>
-      </a>
-
-      <a class="project-card" href="https://github.com/ollealm/project-todos" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-todo.jpg" alt="Todo Screenshot">
-          <h4 class="on-picture">Your Todos</h4>
-        </div>
-        <p><span class="upper-bold">Redux todo app</span>&ensp;Web app built using React, Redux and Styled components.
-          Using local storage for persisted state.&nbsp;<span class="red upper-bold">&#10555;</span></p>
-        <div class="tags">
-          <p>React</p>
-          <p>Redux</p>
-          <p>Styled components</p>
-        </div>
-      </a>
-
-    </article>
-
-    <!-- Section 3 Other -->
-
-    <article class="other-projects">
-
-      <h3>Other Projects</h3>
-
-      <a class="project-card other only-mobile" href="https://github.com/ollealm/project-weather-app" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-weather-app.jpg" alt="Wether App Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">Weather App</span>&ensp;Web app in Vanilla JavaScript finding you some good
-            weather,
-            using Open Weather API and Geolocation&nbsp;<span class="red upper-bold">&#10555;</span></p>
+      </article>
+      <article class="project-card-container">
+        <a
+          class="project-card only-desktop-block"
+          href="https://github.com/ollealm/project-weather-app"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img
+              src="assets/proj-weather-app.jpg"
+              alt="Wether App Screenshot"
+            />
+            <h4 class="on-picture">Good Weather</h4>
+          </div>
+          <p>
+            <span class="upper-bold">Weather App</span>&ensp;Web app in Vanilla
+            JavaScript finding you some good weather, using Open Weather API and
+            Geolocation&nbsp;<span class="red upper-bold">&#10555;</span>
+          </p>
           <div class="tags">
             <p>JavaScript</p>
             <p>API</p>
             <p>JSON</p>
             <p>Async</p>
           </div>
-        </div>
-      </a>
+        </a>
 
-      <a class="project-card other only-mobile" href="https://github.com/ollealm/project-todos" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-todo.jpg" alt="Todo Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">Redux todo app</span>&ensp;Web app built using React, Redux and Styled components.
-            Using local storage for persisted state.&nbsp;<span class="red upper-bold">&#10555;</span></p>
+        <a
+          class="project-card"
+          href="https://github.com/ollealm/project-todos"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/proj-todo.jpg" alt="Todo Screenshot" />
+            <h4 class="on-picture">Your Todos</h4>
+          </div>
+          <p>
+            <span class="upper-bold">Redux todo app</span>&ensp;Web app built
+            using React, Redux and Styled components. Using local storage for
+            persisted state.&nbsp;<span class="red upper-bold">&#10555;</span>
+          </p>
           <div class="tags">
             <p>React</p>
             <p>Redux</p>
             <p>Styled components</p>
           </div>
-        </div>
-      </a>
+        </a>
+      </article>
 
-      <a class="project-card other" href="https://github.com/ollealm/project-movies" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-react-movies.jpg" alt="Movie List Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">Movie Browser</span>&ensp;Multipage movie browser using React Router with live
-            data
-            from
-            TMDb API.&nbsp;<span class="red upper-bold">&#10555;</span></p>
-          <div class="tags">
-            <p>React</p>
-            <p>Router</p>
-            <p>Hooks</p>
-            <p>CSS3</p>
+      <!-- Section 3 Other -->
+
+      <article class="other-projects">
+        <h3>Other Projects</h3>
+
+        <a
+          class="project-card other only-mobile"
+          href="https://github.com/ollealm/project-weather-app"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img
+              src="assets/proj-weather-app.jpg"
+              alt="Wether App Screenshot"
+            />
           </div>
-        </div>
-      </a>
-
-      <a class="project-card other" href="https://github.com/ollealm/project-react-native-app" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-react-native.jpg" alt="React Native App">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">React Native App</span>&ensp;Mobile app that renders stoic quotes and colors
-            them based on the phones sensors.&nbsp;<span class="red upper-bold">&#10555;</span></p>
-          <div class="tags">
-            <p>React Native</p>
-            <p>Accelerometer</p>
-            <p>Gyroscope</p>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">Weather App</span>&ensp;Web app in
+              Vanilla JavaScript finding you some good weather, using Open
+              Weather API and Geolocation&nbsp;<span class="red upper-bold"
+                >&#10555;</span
+              >
+            </p>
+            <div class="tags">
+              <p>JavaScript</p>
+              <p>API</p>
+              <p>JSON</p>
+              <p>Async</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
 
-      <a class="project-card other" href="https://github.com/ollealm/project-nutrition" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-scan-food.jpg" alt="Barcode Scanner Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">Barcode scanner</span>&ensp;Retrieves nutritional information, stores it using
-            Redux
-            and presents the caloric ratio as pie charts&nbsp;<span class="red upper-bold">&#10555;</span>
+        <a
+          class="project-card other only-mobile"
+          href="https://github.com/ollealm/project-todos"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/proj-todo.jpg" alt="Todo Screenshot" />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">Redux todo app</span>&ensp;Web app built
+              using React, Redux and Styled components. Using local storage for
+              persisted state.&nbsp;<span class="red upper-bold">&#10555;</span>
+            </p>
+            <div class="tags">
+              <p>React</p>
+              <p>Redux</p>
+              <p>Styled components</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-card other"
+          href="https://github.com/ollealm/project-movies"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img
+              src="assets/proj-react-movies.jpg"
+              alt="Movie List Screenshot"
+            />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">Movie Browser</span>&ensp;Multipage movie
+              browser using React Router with live data from TMDb
+              API.&nbsp;<span class="red upper-bold">&#10555;</span>
+            </p>
+            <div class="tags">
+              <p>React</p>
+              <p>Router</p>
+              <p>Hooks</p>
+              <p>CSS3</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-card other"
+          href="https://github.com/ollealm/project-react-native-app"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/proj-react-native.jpg" alt="React Native App" />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">React Native App</span>&ensp;Mobile app
+              that renders stoic quotes and colors them based on the phones
+              sensors.&nbsp;<span class="red upper-bold">&#10555;</span>
+            </p>
+            <div class="tags">
+              <p>React Native</p>
+              <p>Accelerometer</p>
+              <p>Gyroscope</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-card other"
+          href="https://github.com/ollealm/project-nutrition"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img
+              src="assets/proj-scan-food.jpg"
+              alt="Barcode Scanner Screenshot"
+            />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">Barcode scanner</span>&ensp;Retrieves
+              nutritional information, stores it using Redux and presents the
+              caloric ratio as pie charts&nbsp;<span class="red upper-bold"
+                >&#10555;</span
+              >
+            </p>
+            <div class="tags">
+              <p>React</p>
+              <p>Redux</p>
+              <p>Thunk</p>
+              <p>CSS3</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-card other"
+          href="https://github.com/ollealm/project-redux-quiz-tigers"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/proj-quiz.jpg" alt="Redux Quiz Screenshot" />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">Redux quiz</span>&ensp;Made during a
+              Technigo virtual meetup workshop, as a practice in team work, git
+              and mob-programming.&nbsp;<span class="red upper-bold"
+                >&#10555;</span
+              >
+            </p>
+            <div class="tags">
+              <p>Redux</p>
+              <p>React</p>
+              <p>Mob programming</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-card other"
+          href="https://github.com/ollealm/project-survey"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/proj-react-form.jpg" alt="React Form Screenshot" />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">React Form</span>&ensp;Form built in
+              Reacts with the useState Hook, and a Neumorphistic UI.&nbsp;<span
+                class="red upper-bold"
+                >&#10555;</span
+              >
+            </p>
+            <div class="tags">
+              <p>React</p>
+              <p>Hooks</p>
+              <p>CSS3</p>
+              <p>HTML5</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-card other"
+          href="https://codesandbox.io/s/cards-lab-kyqfu?file=/src/App.js"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/proj-cards.jpg" alt="React Cards Screenshot" />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">React Cards</span>&ensp;Reusable cards
+              using props from an object array, made in CodeSandbox&nbsp;<span
+                class="red upper-bold"
+                >&#10555;</span
+              >
+            </p>
+            <div class="tags">
+              <p>React</p>
+              <p>CSS3</p>
+              <p>CodeSandbox</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-card other"
+          href="https://github.com/ollealm/project-music-releases"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/proj-music.jpg" alt="Music Releases Screenshot" />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">Music releases</span>&ensp;Pair
+              programming assignment and an introduction to React. Styled with
+              Spotify as a guide.&nbsp;<span class="red upper-bold"
+                >&#10555;</span
+              >
+            </p>
+            <div class="tags">
+              <p>React</p>
+              <p>CSS3</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-card other"
+          href="https://github.com/ollealm/technigo-portfolio"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/proj-portfolio.jpg" alt="Portfolio Screenshot" />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">Technigo portfolio</span>&ensp;Technical
+              portfolio made in pure HTML and CSS following specific design
+              guidelines and accessibility requirements.&nbsp;<span
+                class="red upper-bold"
+                >&#10555;</span
+              >
+            </p>
+            <div class="tags">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>Web accessibility</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-card other"
+          href="https://github.com/ollealm/project-business-site"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img
+              src="assets/proj-shuttle.jpg"
+              alt="Moscow Shuttle Screenshot"
+            />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">City Shuttle</span>&ensp;Site containing
+              a Hero video header, a signup form and an accordion
+              FAQ.&nbsp;<span class="red upper-bold">&#10555;</span>
+            </p>
+            <div class="tags">
+              <p>Hero Header</p>
+              <p>Form</p>
+              <p>Accordion</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-card other"
+          href="https://github.com/ollealm/project-news-site"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/proj-tree.jpg" alt="Tree Times Screenshot" />
+          </div>
+          <div class="card-text-container">
+            <p>
+              <span class="upper-bold">Tree Times</span>&ensp;A responsive site
+              using flexbox, media queries and semantic HTML&nbsp;<span
+                class="red upper-bold"
+                >&#10555;</span
+              >
+            </p>
+            <div class="tags">
+              <p>Responsive</p>
+              <p>HTML5</p>
+              <p>CSS3</p>
+            </div>
+          </div>
+        </a>
+      </article>
+    </section>
+
+    <!-- Section 4 Thoughts  -->
+
+    <section class="portfolio-section thoughts">
+      <h2>My thoughts <span class="only-desktop">about code</span></h2>
+
+      <article class="project-card-container">
+        <a
+          class="project-card"
+          href="https://medium.com/@olle_/f-a-q-77bd3e33c235"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/faq.png" alt="FAQ" />
+          </div>
+          <p><span class="date">JUN 2020</span></p>
+          <h4 class="thoughts-h4">F&thinsp;A&thinsp;Q</h4>
+          <p>
+            During the bootcamp we got a few questions that employers often ask
+            about Technigo during interviews. Here are my answers.&nbsp;<span
+              class="red upper-bold"
+              >&#10555;</span
+            >
           </p>
-          <div class="tags">
-            <p>React</p>
-            <p>Redux</p>
-            <p>Thunk</p>
-            <p>CSS3</p>
-          </div>
-        </div>
-      </a>
-
-      <a class="project-card other" href="https://github.com/ollealm/project-redux-quiz-tigers" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-quiz.jpg" alt="Redux Quiz Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">Redux quiz</span>&ensp;Made during a Technigo virtual meetup workshop, as a
-            practice in team work, git and mob-programming.&nbsp;<span class="red upper-bold">&#10555;</span></p>
-          <div class="tags">
-            <p>Redux</p>
-            <p>React</p>
-            <p>Mob programming</p>
-          </div>
-        </div>
-      </a>
-
-      <a class="project-card other" href="https://github.com/ollealm/project-survey" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-react-form.jpg" alt="React Form Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">React Form</span>&ensp;Form built in Reacts with the useState Hook, and a
-            Neumorphistic UI.&nbsp;<span class="red upper-bold">&#10555;</span></p>
-          <div class="tags">
-            <p>React</p>
-            <p>Hooks</p>
-            <p>CSS3</p>
-            <p>HTML5</p>
-          </div>
-        </div>
-      </a>
-
-      <a class="project-card other" href="https://codesandbox.io/s/cards-lab-kyqfu?file=/src/App.js" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-cards.jpg" alt="React Cards Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">React Cards</span>&ensp;Reusable cards using props from an object array, made in
-            CodeSandbox&nbsp;<span class="red upper-bold">&#10555;</span></p>
-          <div class="tags">
-            <p>React</p>
-            <p>CSS3</p>
-            <p>CodeSandbox</p>
-          </div>
-        </div>
-      </a>
-
-      <a class="project-card other" href="https://github.com/ollealm/project-music-releases" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-music.jpg" alt="Music Releases Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">Music releases</span>&ensp;Pair programming assignment and an introduction to
-            React. Styled with Spotify as a guide.&nbsp;<span class="red upper-bold">&#10555;</span></p>
-          <div class="tags">
-            <p>React</p>
-            <p>CSS3</p>
-          </div>
-        </div>
-      </a>
-
-      <a class="project-card other" href="https://github.com/ollealm/technigo-portfolio" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-portfolio.jpg" alt="Portfolio Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">Technigo portfolio</span>&ensp;Technical portfolio made in pure HTML and CSS
-            following specific design guidelines and accessibility requirements.&nbsp;<span
-              class="red upper-bold">&#10555;</span></p>
-          <div class="tags">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>Web accessibility</p>
-          </div>
-        </div>
-      </a>
-
-      <a class="project-card other" href="https://github.com/ollealm/project-business-site" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-shuttle.jpg" alt="Moscow Shuttle Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">City Shuttle</span>&ensp;Site containing a Hero video header, a signup form and an
-            accordion FAQ.&nbsp;<span class="red upper-bold">&#10555;</span></p>
-          <div class="tags">
-            <p>Hero Header</p>
-            <p>Form</p>
-            <p>Accordion</p>
-          </div>
-        </div>
-      </a>
-
-      <a class="project-card other" href="https://github.com/ollealm/project-news-site" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/proj-tree.jpg" alt="Tree Times Screenshot">
-        </div>
-        <div class="card-text-container">
-          <p><span class="upper-bold">Tree Times</span>&ensp;A responsive site using flexbox, media queries and semantic
-            HTML&nbsp;<span class="red upper-bold">&#10555;</span></p>
-          <div class="tags">
-            <p>Responsive</p>
-            <p>HTML5</p>
-            <p>CSS3</p>
-          </div>
-        </div>
-      </a>
-
-    </article>
-
-  </section>
-
-  <!-- Section 4 Thoughts  -->
-
-  <section class="portfolio-section thoughts">
-
-    <h2>My thoughts <span class="only-desktop">about code</span></h2>
-
-    <article class="project-card-container">
-
-      <a class="project-card" href="https://medium.com/@olle_/f-a-q-77bd3e33c235" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/faq.png" alt="FAQ">
-        </div>
-        <p><span class="date">JUN 2020</span></p>
-        <h4 class="thoughts-h4">F&thinsp;A&thinsp;Q</h4>
-        <p>During the bootcamp we got a few questions that employers often ask about Technigo during
-          interviews. Here are my
-          answers.&nbsp;<span class="red upper-bold">&#10555;</span></p>
-      </a>
-
-      <a class="project-card only-desktop-block" href="https://medium.com/@olle_/hej-71eb938ba7f2" target="_blank">
-        <div class="card-image-container">
-          <img src="assets/lindy.png" alt="Typeface">
-        </div>
-        <p><span class="date">MAR 2020</span></p>
-        <h4 class="thoughts-h4">The Lindy Effect</h4>
-        <p>Thoughts about Frameworks and why fundamental
-          Javascript skills will always
-          matter.&nbsp;<span class="red upper-bold">&#10555;</span>
-        </p>
-      </a>
-
-    </article>
-
-    <article class="more-thoughts">
-
-      <h3>More thoughts</h3>
-
-      <a class="project-card other only-mobile" href="https://medium.com/@olle_/hej-71eb938ba7f2" target="_blank">
-        <p><span class="date">MAR 2020. </span><strong>Thoughts about Frameworks, the Lindy Effect and why
-            fundamental
-            Javascript skills will always
-            matter.</strong>&nbsp;<span class="red upper-bold">&#10555;</span></p>
-      </a>
-      <a class="project-card other" href="https://codepen.io/olleolle/pens/showcase" target="_blank">
-        <p><span class="date">MAY 2020. </span><strong>When I pick up a new programming skill or just want to wrap my
-            head around a concept I often make a small
-            code pen to understand it and use as future reference.
-          </strong>&nbsp;<span class="red upper-bold">&#10555;</span>
-        </p>
-      </a>
-      <a class="project-card other" href="https://www.jetbrains.com/lp/mono/" target="_blank">
-        <p><span class="date">APR 2020. </span><strong>As a designer with an interest in typography I always
-            appreciate a well made font —and JetBrains just released a great one for
-            programming.
-          </strong>&nbsp;<span class="red upper-bold">&#10555;</span>
-        </p>
-      </a>
-      <a class="project-card other" href="https://en.wikipedia.org/wiki/Non-breaking_space" target="_blank">
-        <p><span class="date">FEB 2020. </span><strong>The most underestimated UTF
-            character — &amp;nbsp;</strong>&nbsp;<span class="red upper-bold">&#10555;</span></p>
-      </a>
-    </article>
-  </section>
-
-  <!-- Section 5 Skills -->
-
-  <section class="portfolio-section dark skills">
-    <article>
-      <h2>Skills</h2>
-
-      <!-- Testa Grid?? -->
-
-      <div class="list-container">
-        <ul>
-          <li class="list-header">Code</li>
-          <li>HTML 5</li>
-          <li>CSS 3</li>
-          <li>JavaScript ES6</li>
-          <li>React</li>
-          <li>Redux</li>
-          <li>Node.js</li>
-        </ul>
-
-        <ul>
-          <li class="list-header">Tools</li>
-          <li>Git</li>
-          <li>VS Code</li>
-          <li>Mongo DB</li>
-          <li>Postman</li>
-          <li>Adobe CC</li>
-          <li>Figma</li>
-        </ul>
-
-        <ul>
-          <li class="list-header">Methodology</li>
-          <li>Web accessibility</li>
-          <li>ESlint 7</li>
-          <li>Agile/Scrum</li>
-          <li>Unit Testing</li>
-          <li>Pair programming</li>
-          <li>Mob programming</li>
-        </ul>
-
-        <ul>
-          <li class="list-header">More</li>
-          <li>Typography</li>
-          <li>Video Editing</li>
-          <li>Animation</li>
-          <li>Arduino</li>
-          <li>Processing 3</li>
-          <li>Cycling '74 Max</li>
-        </ul>
-      </div>
-    </article>
-  </section>
-
-  <!-- Section 6 More -->
-
-  <section class="portfolio-section more">
-    <article>
-      <h2>For more</h2>
-
-      <div class="more-container-icon">
-
-        <a class="more-icon-link" href="https://www.linkedin.com/in/olle-a-87150a1a7/" target="_blank" title="LinkedIn">
-          <div class="icon icon-more">
-            <img class="icon-img-more" src="assets/linkedin_white.svg" alt="LinkedIn Logo">
-          </div>
-          <p class="more-text">LinkedIn</p>
         </a>
 
-        <a class="more-icon-link" href="https://github.com/ollealm" target="_blank" title="GitHub">
-          <div class="icon icon-more">
-            <img class="icon-img-more" src="assets/github_white.svg" alt="GitHub Logo">
+        <a
+          class="project-card only-desktop-block"
+          href="https://medium.com/@olle_/hej-71eb938ba7f2"
+          target="_blank"
+        >
+          <div class="card-image-container">
+            <img src="assets/lindy.png" alt="Typeface" />
           </div>
-          <p class="more-text">GitHub</p>
+          <p><span class="date">MAR 2020</span></p>
+          <h4 class="thoughts-h4">The Lindy Effect</h4>
+          <p>
+            Thoughts about Frameworks and why fundamental Javascript skills will
+            always matter.&nbsp;<span class="red upper-bold">&#10555;</span>
+          </p>
         </a>
+      </article>
 
-        <a class="more-icon-link" href="https://codepen.io/olleolle/pens/showcase" target="_blank" title="CodePen">
-          <div class="icon icon-more">
-            <img class="codepen-more" src="assets/codepen_white.svg" alt="CodePen Logo">
-          </div>
-          <p class="more-text">CodePen</p>
+      <article class="more-thoughts">
+        <h3>More thoughts</h3>
+
+        <a
+          class="project-card other only-mobile"
+          href="https://medium.com/@olle_/hej-71eb938ba7f2"
+          target="_blank"
+        >
+          <p>
+            <span class="date">MAR 2020. </span
+            ><strong
+              >Thoughts about Frameworks, the Lindy Effect and why fundamental
+              Javascript skills will always matter.</strong
+            >&nbsp;<span class="red upper-bold">&#10555;</span>
+          </p>
         </a>
+        <a
+          class="project-card other"
+          href="https://codepen.io/olleolle/pens/showcase"
+          target="_blank"
+        >
+          <p>
+            <span class="date">MAY 2020. </span
+            ><strong
+              >When I pick up a new programming skill or just want to wrap my
+              head around a concept I often make a small code pen to understand
+              it and use as future reference. </strong
+            >&nbsp;<span class="red upper-bold">&#10555;</span>
+          </p>
+        </a>
+        <a
+          class="project-card other"
+          href="https://www.jetbrains.com/lp/mono/"
+          target="_blank"
+        >
+          <p>
+            <span class="date">APR 2020. </span
+            ><strong
+              >As a designer with an interest in typography I always appreciate
+              a well made font —and JetBrains just released a great one for
+              programming. </strong
+            >&nbsp;<span class="red upper-bold">&#10555;</span>
+          </p>
+        </a>
+        <a
+          class="project-card other"
+          href="https://en.wikipedia.org/wiki/Non-breaking_space"
+          target="_blank"
+        >
+          <p>
+            <span class="date">FEB 2020. </span
+            ><strong>The most underestimated UTF character — &amp;nbsp;</strong
+            >&nbsp;<span class="red upper-bold">&#10555;</span>
+          </p>
+        </a>
+      </article>
+    </section>
 
-      </div>
-    </article>
-  </section>
+    <!-- Section 5 Skills -->
 
-  <!-- FOOTER -->
+    <section class="portfolio-section dark skills">
+      <article>
+        <h2>Skills</h2>
 
-  <footer>
-    <h3>Contact</h3>
-    <a class="contact" href="mailto:olle.alm@me.com" aria-label="Send me an email">
-      <address>
-        <ul>
-          <li><strong>Olle Alm</strong></li>
-          <li>+46 (0)73-925 78 30</li>
-          <li class="mail">olle.alm@me.com</li>
-        </ul>
-      </address>
-    </a>
-  </footer>
+        <!-- Testa Grid?? -->
 
-  <script src="script.js"></script>
+        <div class="list-container">
+          <ul>
+            <li class="list-header">Code</li>
+            <li>HTML 5</li>
+            <li>CSS 3</li>
+            <li>JavaScript ES6</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Node.js</li>
+            <li>Mongo DB</li>
+            <li>PHP</li>
+            <li>SQL</li>
+          </ul>
 
-</body>
+          <ul>
+            <li class="list-header">Tools</li>
+            <li>Git</li>
+            <li>VS Code</li>
+            <li>Postman</li>
+            <li>Adobe CC</li>
+            <li>Figma</li>
+          </ul>
 
+          <ul>
+            <li class="list-header">Methodology</li>
+            <li>Accessibility</li>
+            <li>Agile/Scrum</li>
+            <li>Unit Testing</li>
+            <li>Pair programming</li>
+            <li>Mob programming</li>
+          </ul>
+
+          <ul>
+            <li class="list-header">More</li>
+            <li>Typography</li>
+            <li>Video Editing</li>
+            <li>Animation</li>
+            <li>Arduino</li>
+            <li>Processing 3</li>
+            <li>Cycling '74 Max</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- Section 6 More -->
+
+    <section class="portfolio-section more">
+      <article>
+        <h2>For more</h2>
+
+        <div class="more-container-icon">
+          <a
+            class="more-icon-link"
+            href="https://www.linkedin.com/in/olle-a-87150a1a7/"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <div class="icon icon-more">
+              <img
+                class="icon-img-more"
+                src="assets/linkedin_white.svg"
+                alt="LinkedIn Logo"
+              />
+            </div>
+            <p class="more-text">LinkedIn</p>
+          </a>
+
+          <a
+            class="more-icon-link"
+            href="https://github.com/ollealm"
+            target="_blank"
+            title="GitHub"
+          >
+            <div class="icon icon-more">
+              <img
+                class="icon-img-more"
+                src="assets/github_white.svg"
+                alt="GitHub Logo"
+              />
+            </div>
+            <p class="more-text">GitHub</p>
+          </a>
+
+          <a
+            class="more-icon-link"
+            href="https://codepen.io/olleolle/pens/showcase"
+            target="_blank"
+            title="CodePen"
+          >
+            <div class="icon icon-more">
+              <img
+                class="codepen-more"
+                src="assets/codepen_white.svg"
+                alt="CodePen Logo"
+              />
+            </div>
+            <p class="more-text">CodePen</p>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <h3>Contact</h3>
+      <a
+        class="contact"
+        href="mailto:olle.alm@me.com"
+        aria-label="Send me an email"
+      >
+        <address>
+          <ul>
+            <li><strong>Olle Alm</strong></li>
+            <li>+46 (0)73-925 78 30</li>
+            <li class="mail">olle.alm@me.com</li>
+          </ul>
+        </address>
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
