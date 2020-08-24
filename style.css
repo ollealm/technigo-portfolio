@@ -8,9 +8,10 @@
   --color-bg1: white;
   --color-bg2: #F4F4F4; */
 
-  --color-1: #f0a;
-  --color-2: black;  /* footer, h2 */
-  --color-3: white;  /* h2, tags, project text*/
+  /* --color-1: #f0a; */
+  --color-1: rgb(255, 0, 128);
+  --color-2: black; /* footer, h2 */
+  --color-3: white; /* h2, tags, project text*/
   --color-text: white;
   /* --color-bg1: #00d;  */
   --color-bg1: rgb(0, 0, 200);
@@ -23,12 +24,14 @@ body {
   color: var(--color-text);
 }
 
+*::selection {
+  background: var(--color-1);
+}
+
 article {
   max-width: 550px;
   margin: auto;
 }
-
-
 
 /* FONTS */
 
@@ -48,7 +51,6 @@ h6 {
   letter-spacing: 0.5px;
   margin: 0;
 }
-
 
 h2 {
   padding: 3px 8px;
@@ -112,9 +114,6 @@ a:focus {
   outline-offset: 10px;
 }
 
-
-
-
 /* HEADER */
 
 header {
@@ -127,7 +126,6 @@ header {
   position: relative;
   height: 400px; /* video height */
   /* height: 100vh; */
-
 }
 
 video {
@@ -151,14 +149,13 @@ video {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  
+
   overflow: visible;
   /* copy */
   /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);    */
-
 }
 
 .header-text-box {
@@ -176,17 +173,15 @@ video {
   height: 40px;
   display: inline-flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, .25);
-  transition: transform .1s ease-out, background-color .1s ease-out;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: transform 0.1s ease-out, background-color 0.1s ease-out;
 }
 
 .icon:hover {
   background-color: rgba(0, 0, 0, 1);
   transform: scale(1.02);
-  transition: transform .1s ease-in, background-color .1s ease-in;
-
+  transition: transform 0.1s ease-in, background-color 0.1s ease-in;
 }
-
 
 .icon-img {
   width: 20px;
@@ -204,8 +199,6 @@ video {
   margin-bottom: -15px;
 }
 
-
-
 /* SECTIONS */
 
 .portfolio-section {
@@ -216,8 +209,6 @@ video {
 .dark {
   background-color: var(--color-bg2);
 }
-
-
 
 /* 1 INTRO */
 
@@ -245,15 +236,11 @@ video {
   margin-left: -3px;
 }
 
-
-
 /* 2 TECH */
 
 .tech p {
   text-align: center;
 }
-
-
 
 /* 3 PROJECTS */
 
@@ -296,7 +283,7 @@ video {
 
 .tags {
   font: 9px/10px Roboto;
-  color: #2B2E34;
+  color: #2b2e34;
   /* margin: 20px 0; */
   padding-bottom: 15px;
 }
@@ -384,8 +371,6 @@ video {
   text-decoration: underline;
 }
 
-
-
 /* 5 SKILLS */
 
 .list-container {
@@ -411,8 +396,6 @@ ul {
   margin-top: 0;
   margin-bottom: 40px;
 }
-
-
 
 /* 6 MORE */
 
@@ -457,8 +440,6 @@ ul {
   text-decoration: underline;
 }
 
-
-
 /* FOOTER */
 
 footer {
@@ -491,8 +472,6 @@ footer a:hover .mail {
   text-decoration: underline;
 }
 
-
-
 /* SCROLL BAR */
 
 body::-webkit-scrollbar {
@@ -500,14 +479,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: black
+  background: black;
 }
 
 body::-webkit-scrollbar-thumb {
   background: var(--color-1);
 }
-
-
 
 /* ONLY DESKTOP */
 
@@ -516,17 +493,11 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
-
-
-
-
 /***********************************/
 /************ DESKTOP **************/
 /***********************************/
 
-
 @media (min-width: 900px) {
-
   /* GLOBAL */
 
   .only-desktop {
@@ -545,8 +516,6 @@ body::-webkit-scrollbar-thumb {
     max-width: 1080px;
     margin: auto;
   }
-
-
 
   /* FONTS */
 
@@ -576,8 +545,6 @@ body::-webkit-scrollbar-thumb {
     font: Bold 30px/41px Roboto, sans-serif;
   }
 
-
-
   /* SECTIONS */
 
   header,
@@ -593,14 +560,12 @@ body::-webkit-scrollbar-thumb {
     font: 30px/50px Montserrat, sans-serif;
   }
 
-
-
   /* HEADER */
   header {
     height: 600px;
     /* height: 100vh; */
   }
-    
+
   .content-container-header {
     /* height: 555px; */
     padding-top: 100px;
@@ -634,8 +599,6 @@ body::-webkit-scrollbar-thumb {
     border: 4px Solid White;
   }
 
-
-
   /* 1 INTRO */
 
   .initial {
@@ -652,8 +615,6 @@ body::-webkit-scrollbar-thumb {
     width: 20px;
     height: 20px;
   }
-
-
 
   /* 3 PROJECTS */
   .project-card-container {
@@ -695,7 +656,7 @@ body::-webkit-scrollbar-thumb {
     min-width: 220px;
     flex-shrink: 1;
   }
-  
+
   .other .card-text-container {
     width: 720px;
     flex-shrink: 1;
@@ -704,9 +665,7 @@ body::-webkit-scrollbar-thumb {
   .other img {
     object-fit: contain;
     height: auto;
-  } 
-
-
+  }
 
   /* 4 THOUGHTS */
 
@@ -722,8 +681,6 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 50px;
   }
 
-
-
   /* 5 SKILLS */
 
   ul {
@@ -735,8 +692,6 @@ body::-webkit-scrollbar-thumb {
     margin-top: 0;
     margin-bottom: 40px;
   }
-
-
 
   /* 6 MORE */
 
@@ -763,12 +718,10 @@ body::-webkit-scrollbar-thumb {
     font: Bold 25px/41px Roboto;
   }
 
-
-
   /* FOOTER */
 
   footer {
-    height: 573px
+    height: 573px;
   }
 
   footer h3 {
@@ -779,7 +732,4 @@ body::-webkit-scrollbar-thumb {
     font: 30px/50px Montserrat;
     color: var(--color-text);
   }
-
-
-
 }
