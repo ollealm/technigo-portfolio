@@ -9,13 +9,18 @@
   --color-bg2: #F4F4F4; */
 
   /* --color-1: #f0a; */
+  --color-1: rgb(0, 0, 255);
   --color-1: rgb(255, 0, 128);
+  --color-1: rgb(255, 0, 100);
   --color-2: black; /* footer, h2 */
   --color-3: white; /* h2, tags, project text*/
   --color-text: white;
+  /* --color-text: black; */
   /* --color-bg1: #00d;  */
   --color-bg1: rgb(0, 0, 200);
-  --color-bg2: rgb(0, 0, 30);
+  --color-bg1: rgb(255, 0, 100);
+  /* --color-bg2: rgb(0, 0, 30); */
+  --color-bg2: rgb(0, 0, 0);
 }
 
 body {
@@ -36,12 +41,12 @@ article {
 /* FONTS */
 
 h1 {
-  font: Bold 40px/49px Montserrat, sans-serif;
+  font: Bold 40px/49px Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
 .sub-titel {
-  font: 24px/29px Montserrat, sans-serif;
+  font: 24px/29px Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -54,31 +59,32 @@ h6 {
 
 h2 {
   padding: 3px 8px;
-  background: var(--color-2);
+  /* background: var(--color-2); */
   /* -moz-width: fit-content; */
   width: max-content;
   color: var(--color-3);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font: Bold 22px/27px Montserrat, sans-serif;
+  letter-spacing: 2px;
+  font: Bold 22px/27px Helvetica, Arial, sans-serif;
   margin: 0 auto 35px auto;
   text-align: center;
 }
 
 .dark h2 {
-  background: var(--color-1);
+  /* background: var(--color-1); */
 }
 
 h3 {
-  font: Bold 21px/25px Montserrat, sans-serif;
+  font: Bold 21px/25px Helvetica, Arial, sans-serif;
   color: var(--color-3);
   margin: 0 auto 35px auto;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .dark h3 {
-  color: var(--color-1);
+  /* color: var(--color-1); */
 }
 
 h4 {
@@ -203,7 +209,8 @@ video {
 
 .portfolio-section {
   padding: 58px 36px 40px 36px;
-  font: 17px/29px Montserrat, sans-serif;
+  font: 17px/29px Helvetica, Arial, sans-serif;
+  /* min-height: 100vh; */
 }
 
 .dark {
@@ -256,9 +263,12 @@ video {
   width: 100%;
   position: relative;
   background: var(--color-bg2);
+  /* background: blue; */
+  /* mix-blend-mode: screen; */
 }
 
 .card-image-container img {
+  /* filter: grayscale(100); */
   width: 100%;
   /* opacity: 0.5; */
   display: block;
@@ -276,7 +286,7 @@ video {
   /* centers the textblock */
   text-align: center;
   z-index: 10;
-  font: Bold 16px/19px Montserrat, sans-serif;
+  font: Bold 16px/19px Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: var(--color-3);
 }
@@ -299,9 +309,15 @@ video {
   text-decoration: underline;
 }
 
+.project-card:hover .red {
+  text-decoration: none;
+}
+
 .project-card:hover img {
   opacity: 1;
   transition: 0.2s;
+  /* filter: grayscale(0); */
+  /* mix-blend-mode: normal; */
 }
 
 .project-card:hover .on-picture {
@@ -520,11 +536,11 @@ body::-webkit-scrollbar-thumb {
   /* FONTS */
 
   h1 {
-    font: Bold 78px/92px Montserrat, sans-serif;
+    font: Bold 78px/92px Helvetica, Arial, sans-serif;
   }
 
   .sub-titel {
-    font: 50px/61px Montserrat, sans-serif;
+    font: 50px/61px Helvetica, Arial, sans-serif;
   }
 
   h6 {
@@ -532,13 +548,13 @@ body::-webkit-scrollbar-thumb {
   }
 
   h2 {
-    font: Bold 48px/58px Montserrat, sans-serif;
+    font: Bold 48px/58px Helvetica, Arial, sans-serif;
     padding: 3px 15px;
     margin-bottom: 70px;
   }
 
   h3 {
-    font: Bold 38px/47px Montserrat, sans-serif;
+    font: Bold 38px/47px Helvetica, Arial, sans-serif;
   }
 
   h4 {
@@ -557,17 +573,20 @@ body::-webkit-scrollbar-thumb {
   .portfolio-section {
     padding-top: 125px;
     padding-bottom: 125px;
-    font: 30px/50px Montserrat, sans-serif;
+    font: 30px/50px Helvetica, Arial, sans-serif;
   }
 
   /* HEADER */
   header {
-    height: 600px;
-    /* height: 100vh; */
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
   }
 
   .content-container-header {
     /* height: 555px; */
+    height: 100%;
+    box-sizing: border-box;
     padding-top: 100px;
   }
 
@@ -623,7 +642,11 @@ body::-webkit-scrollbar-thumb {
   }
 
   .card-image-container img {
-    opacity: 0.6;
+    opacity: 0.7;
+    /* mix-blend-mode: screen; */
+  }
+  .other .card-image-container img {
+    opacity: 1;
   }
 
   .project-card {
@@ -635,7 +658,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .on-picture {
-    font: Bold 28px/34px Montserrat, sans-serif;
+    font: Bold 28px/34px Helvetica, Arial, sans-serif;
   }
 
   .tags {
@@ -729,7 +752,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .contact {
-    font: 30px/50px Montserrat;
+    font: 30px/50px Helvetica, Arial;
     color: var(--color-text);
   }
 }
