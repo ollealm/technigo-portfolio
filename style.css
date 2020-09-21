@@ -135,6 +135,7 @@ header {
 }
 
 video {
+  display: none;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -145,6 +146,25 @@ video {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+picture {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  /* centers video */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .content-container-header {
@@ -581,6 +601,14 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     min-height: 600px;
     max-height: 800px;
+  }
+
+  video {
+    display: block;
+  }
+
+  picture {
+    display: none;
   }
 
   .content-container-header {
