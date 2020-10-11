@@ -1,26 +1,14 @@
 /* GLOBAL */
 
 :root {
-  /* --color-1: #FA382F;
-  --color-2: #072BCE;
-  --color-3: #FDDFE7;
-  --color-text: yellow;
-  --color-bg1: white;
-  --color-bg2: #F4F4F4; */
-
-  /* --color-1: #f0a; */
   --color-1: rgb(0, 0, 255);
-  --color-1: rgb(255, 0, 128);
   --color-1: rgb(255, 0, 100);
   --color-2: black; /* footer, h2 */
   --color-3: white; /* h2, tags, project text*/
   --color-text: white;
-  /* --color-text: black; */
-  /* --color-bg1: #00d;  */
   --color-bg1: rgb(0, 0, 200);
-  --color-bg1: rgb(255, 0, 100);
-  /* --color-bg2: rgb(0, 0, 30); */
-  --color-bg2: rgb(0, 0, 0);
+  --color-bg1: var(--color-1);
+  --color-bg2: rgb(20, 20, 20);
 }
 
 body {
@@ -123,15 +111,10 @@ a:focus {
 /* HEADER */
 
 header {
-  /* background-image: url(); */
-  /* background-image: linear-gradient(rgb(7, 255, 181), rgb(0, 217, 255)); */
   padding: 0px 40px 0 40px;
   color: var(--color-text);
-
-  /* copy */
   position: relative;
   height: 400px; /* video height */
-  /* height: 100vh; */
 }
 
 video {
@@ -168,20 +151,13 @@ picture img {
 }
 
 .content-container-header {
-  /* height: 200px;  */
   padding-top: 50px;
-  /* margin: auto; */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
 
   overflow: visible;
-  /* copy */
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);    */
 }
 
 .header-text-box {
@@ -230,7 +206,6 @@ picture img {
 .portfolio-section {
   padding: 58px 36px 40px 36px;
   font: 17px/29px Helvetica, Arial, sans-serif;
-  /* min-height: 100vh; */
 }
 
 .dark {
@@ -283,14 +258,10 @@ picture img {
   width: 100%;
   position: relative;
   background: var(--color-bg2);
-  /* background: blue; */
-  /* mix-blend-mode: screen; */
 }
 
 .card-image-container img {
-  /* filter: grayscale(100); */
   width: 100%;
-  /* opacity: 0.5; */
   display: block;
   /* to remove bottom margin from online */
 }
@@ -336,8 +307,6 @@ picture img {
 .project-card:hover img {
   opacity: 1;
   transition: 0.2s;
-  /* filter: grayscale(0); */
-  /* mix-blend-mode: normal; */
 }
 
 .project-card:hover .on-picture {
@@ -366,7 +335,7 @@ picture img {
 
 .other img {
   object-fit: cover;
-  object-position: 50% 0;
+  object-position: 10% 0;
   height: 120px;
   min-width: 60px;
 }
@@ -612,7 +581,6 @@ body::-webkit-scrollbar-thumb {
   }
 
   .content-container-header {
-    /* height: 555px; */
     height: 100%;
     box-sizing: border-box;
     padding-top: 100px;
@@ -671,7 +639,6 @@ body::-webkit-scrollbar-thumb {
 
   .card-image-container img {
     opacity: 0.7;
-    /* mix-blend-mode: screen; */
   }
   .other .card-image-container img {
     opacity: 1;
